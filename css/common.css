@@ -1,0 +1,50 @@
+@charset "utf-8";
+.clear {
+  clear: both;
+}
+.clearFix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+/*全局*/
+body {
+  font-size: 62.5%;
+  /*overflow: hidden;*/
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+.w_per100 {
+  width: 100%;
+}
+.w_per90 {
+  width: 90%;
+}
+.w_per618 {
+  width: 61.8%;
+}
+.w_per382 {
+  width: 38.2%;
+}
+.w_per25 {
+  width: 25%;
+}
+.w_per40 {
+  width: 40%;
+}
+.w_per60 {
+  width: 60%;
+}
+.w_per75 {
+  width: 75%;
+}
