@@ -1,2 +1,167 @@
-@charset "utf-8";
+/**
+* @Date:   2016-07-13T17:00:57+08:00
+* @Last modified time: 2016-07-25T07:35:23+08:00
+*/
+
+
+
+@charset "UTF-8";
 @import "lib";
+
+
+/** banner
+----------------------------------------------------------------*/
+.banner{
+	.img{
+		max-width: 100%;
+	}
+}
+
+
+/** column_introduce
+----------------------------------------------------------------*/
+.column_wrap{
+	margin: 90px auto 120px auto;
+	// padding:0 150px;
+	border:1px solid @c_f;
+	border-left:none;
+	border-right:none;
+}
+.column_introduce{
+	margin: 0 auto;
+	padding: 100px 0;
+	width: 1200px;
+	text-align: center;
+
+	.item{
+		display: inline-block;
+		width: 24%;
+	}
+
+	.icon{
+		display: block;
+		margin: 0 auto;
+		width: 200px;
+		height: 200px;
+
+		border-radius: 50%;
+		border: 2px solid @c_f;
+
+		line-height: 200px;
+		font-size: 150px;
+	}
+
+	.content{
+		position: relative;
+		margin: 50px auto 0 auto;
+		height: 270px;
+		width: 1px;
+		background: @c_f;
+		color: @c_f;
+		line-height: 1.2;
+
+		// 圆点
+		&:before{
+			content: "";
+			position:absolute;
+			// top:-2px;
+			top: 100%;
+			left: -8px;
+			width: 10px;
+			height: 10px;
+
+			background: @c_f;
+			border: 4px solid @c_bg;
+			border-radius:50%;
+
+			z-index: 2;
+		}
+		// 竖条
+		&::after{
+			content: "";
+			position:absolute;
+			left:0;
+			bottom: 0;
+
+			height: 0;
+			width: 1px;
+			background: @c_main;
+			z-index: 1;
+		}
+
+	}
+
+	.title,
+	.title_sub{
+		position: absolute;
+		writing-mode:tb-rl;
+	}
+
+	.title{
+		right: 14px;
+		font-size: 36px;
+	}
+
+	.title_sub{
+		left: 14px;
+		font-size: 18px;
+	}
+
+
+	.item:hover{
+		.icon{
+			border-color: @c_main;
+			color: @c_main;
+		}
+
+		.content{
+			color: @c_main;
+
+			&:before{
+				// top:100%;
+				top: -2px;
+				background: @c_main;
+			}
+
+			&::after{
+				height: 100%;
+				width: 1px;
+				background: @c_main;
+			}
+		}
+	}
+}
+
+
+
+
+/** 动画
+----------------------------------------------------------------*/
+.mod_header{
+	.logo{
+		.icon{
+			transition:all .4s ease-out;
+		}
+	}
+}
+.column_introduce .icon,
+.column_introduce .content::before,
+.column_introduce .content::after,
+.column_introduce .title,
+.column_introduce .title_sub,
+.mod_list4 .img{
+	transition:all .4s ease-out;
+}
+
+
+.mod_list .cover .img{
+	transition:transform .4s ease-out;
+}
+
+
+
+
+// 布局定位属性：display / position / float / clear / visibility / overflow
+// 自身属性：width / height / margin / padding / border / background
+// 文本属性：color / font / text-decoration / text-align / vertical-align / white- space / break-word
+// 其他属性（CSS3）：content / cursor / border-radius / box-shadow / text-shadow / background:linear-gradient …
