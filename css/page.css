@@ -1,11 +1,11 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-25T07:35:23+08:00
+* @Last modified time: 2016-07-27T08:12:41+08:00
 */
 @charset "UTF-8";
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-25T07:09:35+08:00
+* @Last modified time: 2016-07-27T07:44:03+08:00
 */
 /* line 8, lib.less */
 /* @charset "UTF-8"; */
@@ -117,14 +117,42 @@
   width: 1px;
   background: #b6263e;
 }
+/** 关于辛辣
+----------------------------------------------------------------*/
+/* line 138, page.less */
+.about_banner {
+  position: relative;
+  margin: 0 0 -154px 0;
+  height: 100%;
+  min-height: 600px;
+  background: url(../images/bg_about2.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+}
+/* line 148, page.less */
+.about_banner .content {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 25.625%;
+  margin: -77px 0 0 0;
+  background: rgba(182, 38, 62, 0.618) url(../images/about_title.png) no-repeat center center;
+  background-size: 38%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+/** 联系我们
+----------------------------------------------------------------*/
 /** 动画
 ----------------------------------------------------------------*/
-/* line 142, page.less */
+/* line 173, page.less */
 .mod_header .logo .icon {
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 147, page.less */
+/* line 178, page.less */
 .column_introduce .icon,
 .column_introduce .content::before,
 .column_introduce .content::after,
@@ -134,7 +162,7 @@
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 157, page.less */
+/* line 188, page.less */
 .mod_list .cover .img {
   -webkit-transition: -webkit-transform 0.4s ease-out;
           transition: transform 0.4s ease-out;

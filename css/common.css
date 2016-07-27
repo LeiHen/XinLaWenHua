@@ -1,11 +1,11 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-25T07:51:30+08:00
+* @Last modified time: 2016-07-27T07:36:30+08:00
 */
 @charset "UTF-8";
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-25T07:09:35+08:00
+* @Last modified time: 2016-07-27T07:44:03+08:00
 */
 /* line 8, lib.less */
 /* @charset "UTF-8"; */
@@ -73,8 +73,10 @@ a:active {
 /* line 55, common.less */
 .mod_header {
   background: #b6263e;
+  overflow: hidden;
+  z-index: 1;
 }
-/* line 60, common.less */
+/* line 62, common.less */
 .mod_header .logo .icon {
   display: block;
   float: left;
@@ -84,7 +86,7 @@ a:active {
   line-height: 0.5;
   color: #ffffff;
 }
-/* line 73, common.less */
+/* line 75, common.less */
 .mod_header .logo:hover .icon {
   -webkit-transform: scale(0.98);
       -ms-transform: scale(0.98);
@@ -92,51 +94,51 @@ a:active {
 }
 /* mod_footer
  ------------------------------------------------------------- */
-/* line 87, common.less */
+/* line 89, common.less */
 .mod_footer {
   height: 300px;
   background: #b6263e;
   box-shadow: inset 0px 10px 40px -10px #000000;
 }
-/* line 94, common.less */
+/* line 96, common.less */
 .mod_footer .relation {
   padding: 110px 0 30px 0;
   text-align: center;
 }
-/* line 97, common.less */
+/* line 99, common.less */
 .mod_footer .relation .item {
   padding: 0 20px;
   width: 50px;
   height: 50px;
   color: #ffffff;
 }
-/* line 107, common.less */
+/* line 109, common.less */
 .mod_footer .relation .icon {
   font-size: 40px;
   line-height: 1;
 }
-/* line 116, common.less */
+/* line 118, common.less */
 .mod_footer .txt {
   color: #ffffff;
   text-align: center;
 }
-/* line 120, common.less */
+/* line 122, common.less */
 .mod_footer .companyname {
   font-size: 30px;
 }
-/* line 124, common.less */
+/* line 126, common.less */
 .mod_footer .companyname_en {
   margin: 10px 0 0 0;
   font-size: 14px;
 }
 /* mod_nav_main
  ------------------------------------------------------------- */
-/* line 133, common.less */
+/* line 135, common.less */
 .mod_nav_main {
   padding: 70px 0 40px 0;
   text-align: right;
 }
-/* line 137, common.less */
+/* line 139, common.less */
 .mod_nav_main .link {
   position: relative;
   margin: 0 30px;
@@ -144,7 +146,7 @@ a:active {
   line-height: 1.6;
   font-size: 28px;
 }
-/* line 147, common.less */
+/* line 149, common.less */
 .mod_nav_main .link::before {
   content: "";
   position: absolute;
@@ -157,24 +159,24 @@ a:active {
   background: #ffffff;
   border-radius: 50%;
 }
-/* line 161, common.less */
+/* line 163, common.less */
 .mod_nav_main .link:first-child::before {
   display: none;
 }
-/* line 166, common.less */
+/* line 168, common.less */
 .mod_nav_main .link.active,
 .mod_nav_main .link:hover {
   text-decoration: underline;
 }
 /* nav_crumbs
  ------------------------------------------------------------- */
-/* line 176, common.less */
+/* line 178, common.less */
 .mod_nav_crumbs {
   display: block;
   margin: 180px 0 110px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 181, common.less */
+/* line 183, common.less */
 .mod_nav_crumbs .link {
   position: relative;
   display: inline-block;
@@ -183,7 +185,7 @@ a:active {
   font-size: 30px;
   line-height: 1em;
 }
-/* line 189, common.less */
+/* line 191, common.less */
 .mod_nav_crumbs .link::before {
   content: "";
   position: absolute;
@@ -194,35 +196,35 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 200, common.less */
+/* line 202, common.less */
 .mod_nav_crumbs .link.active,
 .mod_nav_crumbs .link:hover {
   color: #b6263e;
 }
-/* line 204, common.less */
+/* line 206, common.less */
 .mod_nav_crumbs .link.active::before,
 .mod_nav_crumbs .link:hover::before {
   background: #b6263e;
 }
 /* list
  ------------------------------------------------------------- */
-/* line 214, common.less */
+/* line 216, common.less */
 .mod_list_wrap {
   margin: 20px auto;
 }
-/* line 218, common.less */
+/* line 220, common.less */
 .mod_list {
   height: 280px;
   margin: 76px auto 88px auto;
   background: #e4e4e4;
 }
-/* line 223, common.less */
+/* line 225, common.less */
 .mod_list .wrap {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
-/* line 231, common.less */
+/* line 233, common.less */
 .mod_list .cover {
   position: absolute;
   display: block;
@@ -235,24 +237,24 @@ a:active {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 242, common.less */
+/* line 244, common.less */
 .mod_list .cover .img {
   max-width: 100%;
   display: block;
 }
-/* line 245, common.less */
+/* line 247, common.less */
 .mod_list .cover .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 251, common.less */
+/* line 253, common.less */
 .mod_list .fr {
   width: 540px;
   height: 280px;
   margin: 0 0 0 400px;
 }
-/* line 257, common.less */
+/* line 259, common.less */
 .mod_list .title {
   margin: 70px 0 20px 0;
   font-size: 20px;
@@ -261,7 +263,7 @@ a:active {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 268, common.less */
+/* line 270, common.less */
 .mod_list .wire {
   position: relative;
   display: block;
@@ -269,7 +271,7 @@ a:active {
   margin: 0 0 20px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 274, common.less */
+/* line 276, common.less */
 .mod_list .wire::before {
   content: "";
   position: absolute;
@@ -281,13 +283,13 @@ a:active {
   border: 4px solid #e4e4e4;
   border-radius: 50%;
 }
-/* line 287, common.less */
+/* line 289, common.less */
 .mod_list .info {
   height: 160px;
   font-size: 14px;
   line-height: 1.6;
 }
-/* line 293, common.less */
+/* line 295, common.less */
 .mod_list .btn_more {
   margin: 0 0 0 auto;
   padding: 8px;
@@ -295,14 +297,14 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 300, common.less */
+/* line 302, common.less */
 .mod_list .btn_more:hover {
   color: #b6263e;
   border-color: #b6263e;
 }
 /* article
  ------------------------------------------------------------- */
-/* line 313, common.less */
+/* line 315, common.less */
 .mod_article .title {
   position: relative;
   padding: 50px 0;
@@ -313,7 +315,7 @@ a:active {
   font-weight: normal;
   border-bottom: 2px solid #3c3c3c;
 }
-/* line 323, common.less */
+/* line 325, common.less */
 .mod_article .title::before {
   content: "";
   position: absolute;
@@ -325,38 +327,38 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 336, common.less */
+/* line 338, common.less */
 .mod_article .cover {
   padding: 0 20px 70px 20px;
   margin: 0 0 100px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 341, common.less */
+/* line 343, common.less */
 .mod_article .cover .img {
   margin: 0 auto 40px auto;
   width: 100%;
   max-width: display: block;
 }
-/* line 349, common.less */
+/* line 351, common.less */
 .mod_article .cover p {
   color: #8c8989;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
 }
-/* line 357, common.less */
+/* line 359, common.less */
 .mod_article .content {
   margin: 0 0 120px 0 ;
   color: #3c3c3c;
   line-height: 1.6em;
 }
-/* line 362, common.less */
+/* line 364, common.less */
 .mod_article .content p {
   margin: 2em 0;
 }
 /* page
   ------------------------------------------------------------- */
-/* line 372, common.less */
+/* line 374, common.less */
 .mod_page {
   margin: 40px auto;
   padding: 40px 0 0 0;
@@ -364,7 +366,7 @@ a:active {
   text-align: right;
   overflow: hidden;
 }
-/* line 379, common.less */
+/* line 381, common.less */
 .mod_page_item {
   display: inline-block;
   padding: 0 6px;
@@ -377,7 +379,7 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 396, common.less */
+/* line 398, common.less */
 .mod_page_item:hover,
 .mod_page_item.active {
   color: #ffffff;
@@ -386,12 +388,12 @@ a:active {
 }
 /* share
  ------------------------------------------------------------- */
-/* line 408, common.less */
+/* line 410, common.less */
 .mod_share {
   margin: 10px auto;
   text-align: right;
 }
-/* line 412, common.less */
+/* line 414, common.less */
 .mod_share .link {
   display: inline-block;
   margin: 0 5px;
@@ -404,27 +406,27 @@ a:active {
   font-size: 30px;
   text-align: center;
 }
-/* line 425, common.less */
+/* line 427, common.less */
 .mod_share .link:hover {
   background: #b6263e;
 }
 /*  list4
  ------------------------------------------------------------- */
-/* line 440, common.less */
+/* line 442, common.less */
 .mod_list4 .item {
   display: inline-block;
   width: 200px;
   margin-left: 114px;
 }
-/* line 445, common.less */
+/* line 447, common.less */
 .mod_list4 .item:first-child {
   margin-left: 0;
 }
-/* line 450, common.less */
+/* line 452, common.less */
 .mod_list4 .item:hover .title {
   color: #b6263e;
 }
-/* line 455, common.less */
+/* line 457, common.less */
 .mod_list4 .img_wrap {
   width: 200px;
   height: 200px;
@@ -433,18 +435,18 @@ a:active {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-/* line 463, common.less */
+/* line 465, common.less */
 .mod_list4 .img {
   display: block;
   max-width: 100%;
 }
-/* line 467, common.less */
+/* line 469, common.less */
 .mod_list4 .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 471, common.less */
+/* line 473, common.less */
 .mod_list4 .title {
   margin: 20px 0;
   text-align: center;
@@ -456,18 +458,18 @@ a:active {
 }
 /* recommend
  ------------------------------------------------------------- */
-/* line 485, common.less */
+/* line 487, common.less */
 .mod_recommend {
   margin: 100px auto;
 }
-/* line 488, common.less */
+/* line 490, common.less */
 .mod_recommend .wire {
   position: relative;
   margin: 30px 0;
   height: 1px;
   background: #3c3c3c;
 }
-/* line 494, common.less */
+/* line 496, common.less */
 .mod_recommend .wire .title {
   position: absolute;
   top: -22px;
@@ -478,7 +480,7 @@ a:active {
   line-height: 1;
   font-weight: normal;
 }
-/* line 505, common.less */
+/* line 507, common.less */
 .mod_recommend .wire::before {
   content: "";
   position: absolute;
@@ -489,7 +491,7 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 517, common.less */
+/* line 519, common.less */
 .mod_recommend .mod_list4 {
   margin: 60px 0;
 }
