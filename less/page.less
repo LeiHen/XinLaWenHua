@@ -1,6 +1,6 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-27T08:12:41+08:00
+* @Last modified time: 2016-07-28T03:06:36+08:00
 */
 
 
@@ -160,9 +160,41 @@
 
 /** 联系我们
 ----------------------------------------------------------------*/
+.contactus_banner{
+	max-width: 100%;
+	width: 100%;
+	position: relative;
+	margin: -100px 0 0 0;
+	z-index: -1;
+}
+
 .contactus{
+	// position: relative;
+	// margin: 0 0 -154px 0;
+	// height: 100%;
+	// min-height:100%;
+	// background: url(../images/contact_us.jpg) no-repeat center center;
+	// background-size: cover;
+	width: 100%;
+	display: table;
+
+	&_itme{
+		display: table-cell;
+		vertical-align: middle;
+		text-align:center;
+
+		width: 33.33%;
+		// margin: 100% 0 0 0;
+
+
+		height:300px;
+
+		background: @c_bg_gray2;
+	}
 
 }
+
+
 
 
 
