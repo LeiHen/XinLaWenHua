@@ -1,0 +1,1 @@
+INSERT INTO `dede_addonarticle` VALUES('1','1','','','','127.0.0.1','/uploads/160730/1-160I00SR1301.jpg');
