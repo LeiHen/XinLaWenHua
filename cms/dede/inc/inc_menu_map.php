@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:20+08:00
+@Last modified time: 2016-07-30T06:35:03+08:00
+-->
+
+
+
 <?php
 /**
  * 菜单地图
@@ -103,16 +110,7 @@ $menusMain = "
   <m:item name='文件式管理器' link='media_main.php?dopost=filemanager' rank='plus_文件管理器' target='main' />
 </m:top>
 
-<m:top mapitem='5' item='6_' name='会员管理' display='none' rank='member_List,member_Type'>
-  <m:item name='注册会员列表' link='member_main.php' rank='member_List' target='main' />
-  <m:item name='会员级别设置' link='member_rank.php' rank='member_Type' target='main' />
-  <m:item name='积分头衔设置' link='member_scores.php' rank='member_Type' target='main' />
-  <m:item name='会员模型管理' link='member_model_main.php' rank='member_Type' target='main' />
-  <m:item name='会员短信管理' link='member_pm.php' rank='member_Type' target='main' />
-  <m:item name='会员留言管理' link='member_guestbook.php' rank='member_Type' target='main' />
-  <m:item name='会员动态管理' link='member_info_main.php?type=feed' rank='member_Type' target='main' />
-  <m:item name='会员心情管理' link='member_info_main.php?type=mood' rank='member_Type' target='main' />
-</m:top>
+
 
 <m:top mapitem='2' item='10_' name='系统设置' display='none' rank='sys_User,sys_Group,sys_Edit,sys_Log,sys_Data'>
   <m:item name='系统基本参数' link='sys_info.php' rank='sys_Edit' target='main' />
@@ -134,15 +132,7 @@ $menusMain = "
   <m:item name='系统错误修复[S]' link='sys_repair.php' rank='sys_verify' target='main' />
 </m:top>
 
-<m:top mapitem='5' item='10_6_' name='支付工具' display='none' rank='sys_Data'>
-  <m:item name='点卡产品分类' link='cards_type.php' rank='sys_Data' target='main' />
-  <m:item name='点卡产品管理' link='cards_manage.php' rank='sys_Data' target='main' />
-  <m:item name='会员产品分类' link='member_type.php' rank='sys_Data' target='main' />
-  <m:item name='会员消费记录' link='member_operations.php' rank='sys_Data' target='main' />
-  <m:item name='商店订单记录' link='shops_operations.php' rank='sys_Data' target='main' />
-  <m:item name='支付接口设置' link='sys_payment.php' .php' rank='sys_Data' target='main' />
-  <m:item name='配货方式设置' link='shops_delivery.php' rank='sys_Data' target='main' />
-</m:top>
+
 
 <m:top mapitem='2' item='10_7_' name='模板管理' display='none' rank='temp_One,temp_Other,temp_MyTag,temp_test,temp_All'>
   <m:item name='默认模板管理' link='templets_main.php' rank='temp_All' target='main'/>
@@ -158,7 +148,7 @@ $menusMain = "
 $plusset = '';
 $dsql->SetQuery("SELECT * FROM `#@__plus` WHERE isshow=1 ORDER BY aid ASC");
 $dsql->Execute();
-while($row = $dsql->GetObject()) 
+while($row = $dsql->GetObject())
 {
     $plusset .= $row->menustring."\r\n";
 }

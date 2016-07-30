@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:19+08:00
+@Last modified time: 2016-07-30T06:51:19+08:00
+-->
+
+
+
 <?php
 /**
  * 管理后台首页主体
@@ -42,7 +49,7 @@ if(empty($dopost))
             else if($value['column'] == 'column2') $column2 = $column2 + array($key => $value['id']);
         }
         include DedeInclude('templets/index_body_move.htm');
-    }else{  
+    }else{
         include DedeInclude('templets/index_body.htm');
     }
     exit();
@@ -97,7 +104,7 @@ else if($dopost=='editsave')
 function _EditSave() {   }
 ----------------------------*/
 else if($dopost=='movesave')
-{   
+{
     $movedata = str_replace('\\',"",$sortorder);
     $movedata = json_decode($movedata,TRUE);
     $movedata = serialize($movedata);
@@ -160,7 +167,7 @@ else if($dopost=='getRightSide')
     $row1 = $dsql->GetOne($query);
     $query = " SELECT COUNT(*) AS dd FROM `#@__feedback` ";
     $row2 = $dsql->GetOne($query);
-    
+
     $chArrNames = array();
     $query = "SELECT id, typename FROM `#@__channeltype` ";
     $dsql->Execute('c', $query);
@@ -168,7 +175,7 @@ else if($dopost=='getRightSide')
     {
         $chArrNames[$row['id']] = $row['typename'];
     }
-    
+
     $query = "SELECT COUNT(channel) AS dd, channel FROM `#@__arctiny` GROUP BY channel ";
     $allArc = 0;
     $chArr = array();
@@ -275,7 +282,7 @@ exit;
             curl_setopt($ch, CURLOPT_URL, $scheme.'://'.$host.':'.$port.$path);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-            curl_setopt($ch, CURLOPT_USERAGENT, @$_SERVER['HTTP_USER_AGENT']); 
+            curl_setopt($ch, CURLOPT_USERAGENT, @$_SERVER['HTTP_USER_AGENT']);
             if ($post) {
                 curl_setopt($ch, CURLOPT_POST, 1);
                 $content = is_array($port) ? http_build_query($post) : $post;
@@ -382,7 +389,7 @@ exit;
             $seo_info['alexa_area_num'] = isset($matches[1])? trim($matches[1]) : 0;
         }
         $seo_info['alexa_area_num'] = empty($seo_info['alexa_area_num'])? 0 : $seo_info['alexa_area_num'];
-        
+
         $url = "http://www.baidu.com/s?wd=site:{$site}";
     	$html = Html2Text(dedeseo_http_send($url));
     	if ( preg_match("#结果数约([\d]+)个#",$html,$matches) )
@@ -418,7 +425,7 @@ exit;
             $seo_info['haosou360_count'] = isset($matches[1])? trim($matches[1]) : 0;
         }
         $seo_info['haosou360_count'] = empty($seo_info['haosou360_count'])? 0 : $seo_info['haosou360_count'];
-        
+
 
         $in_query = "INSERT INTO `#@__plus_seoinfo` (`create_time`, `alexa_num`, `alexa_area_num`, `baidu_count`, `sogou_count`, `haosou360_count`) VALUES ({$now}, '{$seo_info['alexa_num']}', '{$seo_info['alexa_area_num']}', '{$seo_info['baidu_count']}', '{$seo_info['sogou_count']}', '{$seo_info['haosou360_count']}');";
         $dsql->ExecuteNoneQuery($in_query);
@@ -455,10 +462,7 @@ exit;
 
     </tbody></table>
 <?php
-    
+
 	exit;
 }
 ?>
-       
-    
-

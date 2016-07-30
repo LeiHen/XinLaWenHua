@@ -1,0 +1,497 @@
+/**
+* @Date:   2016-07-13T17:00:57+08:00
+* @Last modified time: 2016-07-27T07:36:30+08:00
+*/
+@charset "UTF-8";
+/**
+* @Date:   2016-07-13T17:00:57+08:00
+* @Last modified time: 2016-07-27T07:44:03+08:00
+*/
+/* line 8, lib.less */
+/* @charset "UTF-8"; */
+/*全局*/
+/* line 12, common.less */
+body {
+  background-color: #f5f5f5
+  /*overflow: hidden;*/
+}
+/* line 21, common.less */
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+/* line 25, common.less */
+.w_per100 {
+  width: 100%;
+}
+/* line 26, common.less */
+.w_per90 {
+  width: 90%;
+}
+/* line 27, common.less */
+.w_per618 {
+  width: 61.8%;
+}
+/* line 28, common.less */
+.w_per382 {
+  width: 38.2%;
+}
+/* line 30, common.less */
+.w_per25 {
+  width: 25%;
+}
+/* line 31, common.less */
+.w_per40 {
+  width: 40%;
+}
+/* line 32, common.less */
+.w_per60 {
+  width: 60%;
+}
+/* line 33, common.less */
+.w_per75 {
+  width: 75%;
+}
+/* line 35, common.less */
+.w_max {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+/* line 41, common.less */
+.w_min {
+  min-width: 1200px;
+}
+/* line 45, common.less */
+.w_1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* mod_header
+ ------------------------------------------------------------- */
+/* line 55, common.less */
+.mod_header {
+  background: #b6263e;
+  overflow: hidden;
+  z-index: 1;
+}
+/* line 62, common.less */
+.mod_header .logo .icon {
+  display: block;
+  float: left;
+  height: 86px;
+  padding: 32px 10px 22px;
+  font-size: 15rem;
+  line-height: 0.5;
+  color: #ffffff;
+}
+/* line 75, common.less */
+.mod_header .logo:hover .icon {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
+}
+/* mod_footer
+ ------------------------------------------------------------- */
+/* line 89, common.less */
+.mod_footer {
+  height: 300px;
+  background: #b6263e;
+  box-shadow: inset 0px 10px 40px -10px #000000;
+}
+/* line 96, common.less */
+.mod_footer .relation {
+  padding: 110px 0 30px 0;
+  text-align: center;
+}
+/* line 99, common.less */
+.mod_footer .relation .item {
+  padding: 0 20px;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+}
+/* line 109, common.less */
+.mod_footer .relation .icon {
+  font-size: 40px;
+  line-height: 1;
+}
+/* line 118, common.less */
+.mod_footer .txt {
+  color: #ffffff;
+  text-align: center;
+}
+/* line 122, common.less */
+.mod_footer .companyname {
+  font-size: 30px;
+}
+/* line 126, common.less */
+.mod_footer .companyname_en {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+/* mod_nav_main
+ ------------------------------------------------------------- */
+/* line 135, common.less */
+.mod_nav_main {
+  padding: 70px 0 40px 0;
+  text-align: right;
+}
+/* line 139, common.less */
+.mod_nav_main .link {
+  position: relative;
+  margin: 0 30px;
+  color: #ffffff;
+  line-height: 1.6;
+  font-size: 28px;
+}
+/* line 149, common.less */
+.mod_nav_main .link::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  display: inline-block;
+  margin: -7px 0 0 -7px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+/* line 163, common.less */
+.mod_nav_main .link:first-child::before {
+  display: none;
+}
+/* line 168, common.less */
+.mod_nav_main .link.active,
+.mod_nav_main .link:hover {
+  text-decoration: underline;
+}
+/* nav_crumbs
+ ------------------------------------------------------------- */
+/* line 178, common.less */
+.mod_nav_crumbs {
+  display: block;
+  margin: 180px 0 110px 0;
+  border-bottom: 1px dashed #3c3c3c;
+}
+/* line 183, common.less */
+.mod_nav_crumbs .link {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #3c3c3c;
+  font-size: 30px;
+  line-height: 1em;
+}
+/* line 191, common.less */
+.mod_nav_crumbs .link::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3c3c3c;
+}
+/* line 202, common.less */
+.mod_nav_crumbs .link.active,
+.mod_nav_crumbs .link:hover {
+  color: #b6263e;
+}
+/* line 206, common.less */
+.mod_nav_crumbs .link.active::before,
+.mod_nav_crumbs .link:hover::before {
+  background: #b6263e;
+}
+/* list
+ ------------------------------------------------------------- */
+/* line 216, common.less */
+.mod_list_wrap {
+  margin: 20px auto;
+}
+/* line 220, common.less */
+.mod_list {
+  height: 280px;
+  margin: 76px auto 88px auto;
+  background: #e4e4e4;
+}
+/* line 225, common.less */
+.mod_list .wrap {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+/* line 233, common.less */
+.mod_list .cover {
+  position: absolute;
+  display: block;
+  float: left;
+  margin: 6px 0 0 0;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+/* line 244, common.less */
+.mod_list .cover .img {
+  max-width: 100%;
+  display: block;
+}
+/* line 247, common.less */
+.mod_list .cover .img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 253, common.less */
+.mod_list .fr {
+  width: 540px;
+  height: 280px;
+  margin: 0 0 0 400px;
+}
+/* line 259, common.less */
+.mod_list .title {
+  margin: 70px 0 20px 0;
+  font-size: 20px;
+  line-height: 1.6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* line 270, common.less */
+.mod_list .wire {
+  position: relative;
+  display: block;
+  height: 1px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px dashed #3c3c3c;
+}
+/* line 276, common.less */
+.mod_list .wire::before {
+  content: "";
+  position: absolute;
+  right: 10%;
+  bottom: -9px;
+  width: 10px;
+  height: 10px;
+  background: #3c3c3c;
+  border: 4px solid #e4e4e4;
+  border-radius: 50%;
+}
+/* line 289, common.less */
+.mod_list .info {
+  height: 160px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* line 295, common.less */
+.mod_list .btn_more {
+  margin: 0 0 0 auto;
+  padding: 8px;
+  border: 1px dashed #3c3c3c;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+/* line 302, common.less */
+.mod_list .btn_more:hover {
+  color: #b6263e;
+  border-color: #b6263e;
+}
+/* article
+ ------------------------------------------------------------- */
+/* line 315, common.less */
+.mod_article .title {
+  position: relative;
+  padding: 50px 0;
+  margin: 0 0 120px 0;
+  font-size: 40px;
+  line-height: 1.4;
+  color: #3c3c3c;
+  font-weight: normal;
+  border-bottom: 2px solid #3c3c3c;
+}
+/* line 325, common.less */
+.mod_article .title::before {
+  content: "";
+  position: absolute;
+  right: 10%;
+  bottom: -20px;
+  width: 20px;
+  height: 20px;
+  border: 10px solid #f5f5f5;
+  border-radius: 50%;
+  background: #3c3c3c;
+}
+/* line 338, common.less */
+.mod_article .cover {
+  padding: 0 20px 70px 20px;
+  margin: 0 0 100px 0;
+  border-bottom: 1px dashed #3c3c3c;
+}
+/* line 343, common.less */
+.mod_article .cover .img {
+  margin: 0 auto 40px auto;
+  width: 100%;
+  max-width: display: block;
+}
+/* line 351, common.less */
+.mod_article .cover p {
+  color: #8c8989;
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: center;
+}
+/* line 359, common.less */
+.mod_article .content {
+  margin: 0 0 120px 0 ;
+  color: #3c3c3c;
+  line-height: 1.6em;
+}
+/* line 364, common.less */
+.mod_article .content p {
+  margin: 2em 0;
+}
+/* page
+  ------------------------------------------------------------- */
+/* line 374, common.less */
+.mod_page {
+  margin: 40px auto;
+  padding: 40px 0 0 0;
+  display: block;
+  text-align: right;
+  overflow: hidden;
+}
+/* line 381, common.less */
+.mod_page_item {
+  display: inline-block;
+  padding: 0 6px;
+  margin: 0 4px;
+  height: 20px;
+  border-radius: 15px;
+  border: 1px solid #3c3c3c;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #3c3c3c;
+}
+/* line 398, common.less */
+.mod_page_item:hover,
+.mod_page_item.active {
+  color: #ffffff;
+  border: 1px solid #b6263e;
+  background-color: #b6263e;
+}
+/* share
+ ------------------------------------------------------------- */
+/* line 410, common.less */
+.mod_share {
+  margin: 10px auto;
+  text-align: right;
+}
+/* line 414, common.less */
+.mod_share .link {
+  display: inline-block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  background: #8c8989;
+  border-radius: 50%;
+  color: #ffffff;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+/* line 427, common.less */
+.mod_share .link:hover {
+  background: #b6263e;
+}
+/*  list4
+ ------------------------------------------------------------- */
+/* line 442, common.less */
+.mod_list4 .item {
+  display: inline-block;
+  width: 200px;
+  margin-left: 114px;
+}
+/* line 447, common.less */
+.mod_list4 .item:first-child {
+  margin-left: 0;
+}
+/* line 452, common.less */
+.mod_list4 .item:hover .title {
+  color: #b6263e;
+}
+/* line 457, common.less */
+.mod_list4 .img_wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+/* line 465, common.less */
+.mod_list4 .img {
+  display: block;
+  max-width: 100%;
+}
+/* line 469, common.less */
+.mod_list4 .img:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/* line 473, common.less */
+.mod_list4 .title {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #3c3c3c;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* recommend
+ ------------------------------------------------------------- */
+/* line 487, common.less */
+.mod_recommend {
+  margin: 100px auto;
+}
+/* line 490, common.less */
+.mod_recommend .wire {
+  position: relative;
+  margin: 30px 0;
+  height: 1px;
+  background: #3c3c3c;
+}
+/* line 496, common.less */
+.mod_recommend .wire .title {
+  position: absolute;
+  top: -22px;
+  padding: 14px 10px;
+  border: 1px solid #3c3c3c;
+  background: #f5f5f5;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: normal;
+}
+/* line 507, common.less */
+.mod_recommend .wire::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3c3c3c;
+}
+/* line 519, common.less */
+.mod_recommend .mod_list4 {
+  margin: 60px 0;
+}

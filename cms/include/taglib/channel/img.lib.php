@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:22+08:00
+@Last modified time: 2016-07-30T08:41:06+08:00
+-->
+
+
+
 <?php
 if(!defined('DEDEINC'))
 {
@@ -48,7 +55,10 @@ function ch_img($fvalue,&$arcTag,&$refObj,$fname='')
     $mrow = 0;
     $mcol = 0;
     $images = array();
-    $innerTmp = $arcTag->GetInnerText();
+    // $innerTmp = $arcTag->GetInnerText();
+
+    $innerTmp = ($arcTag=="") ? trim($arcTag) : trim($arcTag->GetInnerText());
+
     if(trim($innerTmp)=='')
     {
         $innerTmp = GetSysTemplets("channel_article_image.htm");

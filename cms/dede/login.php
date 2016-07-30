@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:19+08:00
+@Last modified time: 2016-07-30T06:14:02+08:00
+-->
+
+
+
 <?php
 /**
  * 后台登陆
@@ -46,15 +53,15 @@ if ($dopost=='showad')
 }
 
 //检测后台目录是否更名
-$cururl = GetCurUrl();
-if(preg_match('/dede\/login/i',$cururl))
-{
-    $redmsg = '<div class=\'safe-tips\'>您的管理目录的名称中包含默认名称dede，建议在FTP里把它修改为其它名称，那样会更安全！</div>';
-}
-else
-{
-    $redmsg = '';
-}
+// $cururl = GetCurUrl();
+// if(preg_match('/dede\/login/i',$cururl))
+// {
+//     $redmsg = '<div class=\'safe-tips\'>您的管理目录的名称中包含默认名称dede，建议在FTP里把它修改为其它名称，那样会更安全！</div>';
+// }
+// else
+// {
+//     $redmsg = '';
+// }
 
 //登录检测
 $admindirs = explode('/',str_replace("\\",'/',dirname(__FILE__)));
