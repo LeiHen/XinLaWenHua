@@ -1,6 +1,6 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-27T07:36:30+08:00
+* @Last modified time: 2016-07-31T09:04:21+08:00
 */
 @charset "UTF-8";
 /**
@@ -361,12 +361,16 @@ a:active {
 /* line 374, common.less */
 .mod_page {
   margin: 40px auto;
-  padding: 40px 0 0 0;
+  padding: 40px 20px 0 20px;
   display: block;
   text-align: right;
   overflow: hidden;
 }
 /* line 381, common.less */
+.mod_page > li {
+  display: inline-block;
+}
+/* line 385, common.less */
 .mod_page_item {
   display: inline-block;
   padding: 0 6px;
@@ -379,7 +383,7 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 398, common.less */
+/* line 402, common.less */
 .mod_page_item:hover,
 .mod_page_item.active {
   color: #ffffff;
@@ -388,12 +392,12 @@ a:active {
 }
 /* share
  ------------------------------------------------------------- */
-/* line 410, common.less */
+/* line 414, common.less */
 .mod_share {
   margin: 10px auto;
   text-align: right;
 }
-/* line 414, common.less */
+/* line 418, common.less */
 .mod_share .link {
   display: inline-block;
   margin: 0 5px;
@@ -406,27 +410,27 @@ a:active {
   font-size: 30px;
   text-align: center;
 }
-/* line 427, common.less */
+/* line 431, common.less */
 .mod_share .link:hover {
   background: #b6263e;
 }
 /*  list4
  ------------------------------------------------------------- */
-/* line 442, common.less */
+/* line 446, common.less */
 .mod_list4 .item {
   display: inline-block;
   width: 200px;
   margin-left: 114px;
 }
-/* line 447, common.less */
+/* line 451, common.less */
 .mod_list4 .item:first-child {
   margin-left: 0;
 }
-/* line 452, common.less */
+/* line 456, common.less */
 .mod_list4 .item:hover .title {
   color: #b6263e;
 }
-/* line 457, common.less */
+/* line 461, common.less */
 .mod_list4 .img_wrap {
   width: 200px;
   height: 200px;
@@ -435,18 +439,18 @@ a:active {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-/* line 465, common.less */
+/* line 469, common.less */
 .mod_list4 .img {
   display: block;
   max-width: 100%;
 }
-/* line 469, common.less */
+/* line 473, common.less */
 .mod_list4 .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 473, common.less */
+/* line 477, common.less */
 .mod_list4 .title {
   margin: 20px 0;
   text-align: center;
@@ -458,18 +462,18 @@ a:active {
 }
 /* recommend
  ------------------------------------------------------------- */
-/* line 487, common.less */
+/* line 491, common.less */
 .mod_recommend {
   margin: 100px auto;
 }
-/* line 490, common.less */
+/* line 494, common.less */
 .mod_recommend .wire {
   position: relative;
   margin: 30px 0;
   height: 1px;
   background: #3c3c3c;
 }
-/* line 496, common.less */
+/* line 500, common.less */
 .mod_recommend .wire .title {
   position: absolute;
   top: -22px;
@@ -480,7 +484,7 @@ a:active {
   line-height: 1;
   font-weight: normal;
 }
-/* line 507, common.less */
+/* line 511, common.less */
 .mod_recommend .wire::before {
   content: "";
   position: absolute;
@@ -491,7 +495,7 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 519, common.less */
+/* line 523, common.less */
 .mod_recommend .mod_list4 {
   margin: 60px 0;
 }

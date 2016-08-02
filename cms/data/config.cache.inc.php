@@ -154,4 +154,20 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
+$cfg_address = '';
+$cfg_mail = '';
+$cfg_phone = '';
+$cfg_tel = '';
+$cfg_weibo = '';
+$cfg_wechat = '';
+$cfg_qq = 0;
+$cfg_statistics_code = '<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?64eaa5c1678baeb2b37dc17f4877d6c1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>';
 ?>

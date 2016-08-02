@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:21+08:00
+@Last modified time: 2016-07-31T09:09:15+08:00
+-->
+
+
+
 <?php
 if(!defined('DEDEINC')) exit("Request Error!");
 /**
@@ -883,13 +890,16 @@ class Archives
         $lPage = $nowPage+1;
         if($nowPage==1)
         {
-            $PageList.="<li><a href='#'>上一页</a></li>";
+            // $PageList.="<li><a href='#'>上一页</a></li>";
+            $PageList.="<li><a href='#' class='mod_page_item' rel='prev'>&lt;</a></li>";
+
         }
         else
         {
             if($nPage==1)
             {
-                $PageList.="<li><a href='view.php?aid=$aid'>上一页</a></li>";
+                // $PageList.="<li><a href='view.php?aid=$aid'>上一页</a></li>";
+                $PageList.="<li><a href='view.php?aid=$aid' class='mod_page_item' rel='prev'>&lt;</a></li>";
                 if($cfg_rewrite == 'Y')
                 {
                     $PageList = preg_replace("#.php\?aid=(\d+)#i", '-\\1-1.html', $PageList);
@@ -911,7 +921,9 @@ class Archives
             {
                 if($nowPage!=1)
                 {
-                    $PageList.="<li><a href='view.php?aid=$aid'>1</a></li>";
+                    // $PageList.="<li><a href='view.php?aid=$aid'>1</a></li>";
+                    $PageList.="<li><<a href=view.php?aid=$aid' class='mod_page_item active'>1</a></li>";
+
                     if($cfg_rewrite == 'Y')
                     {
                         $PageList = preg_replace("#.php\?aid=(\d+)#i", '-\\1-1.html', $PageList);
@@ -927,7 +939,7 @@ class Archives
                 $n = $i;
                 if($nowPage!=$i)
                 {
-                    $PageList.="<li><a href='view.php?aid=$aid&pageno=$i'>".$n."</a></li>";
+                    $PageList.="<a href='view.php?aid=$aid&pageno=$i'>".$n."</a>";
                     if($cfg_rewrite == 'Y')
                     {
                         $PageList = str_replace(".php?aid=", "-", $PageList);
@@ -942,7 +954,11 @@ class Archives
         }
         if($lPage <= $totalPage)
         {
-            $PageList.="<li><a href='view.php?aid=$aid&pageno=$lPage'>下一页</a></li>";
+            // $PageList.="<li><a href='view.php?aid=$aid&pageno=$lPage'>下一页</a></li>";
+
+            $PageList.="<a href='view.php?aid=$aid&pageno=$lPage' class='mod_page_item' rel='next'>&gt;</a>";
+
+
             if($cfg_rewrite == 'Y')
             {
                 $PageList = str_replace(".php?aid=", "-", $PageList);
@@ -951,7 +967,11 @@ class Archives
         }
         else
         {
-            $PageList.= "<li><a href='#'>下一页</a></li>";
+            // $PageList.= "<li><a href='#'>下一页</a></li>";
+
+            $PageList.= "<a href='#' class='mod_page_item' rel='next'>&gt;</a>";
+
+
         }
         return $PageList;
     }
@@ -971,22 +991,22 @@ class Archives
         {
             return "";
         }
-        $PageList = "<li><a>共".$totalPage."页: </a></li>";
+        $PageList = "<li><a class='mod_page_item'>共".$totalPage."页: </a></li>";
         $nPage = $nowPage-1;
         $lPage = $nowPage+1;
         if($nowPage==1)
         {
-            $PageList.="<li><a href='#'>上一页</a></li>";
+            $PageList.="<li><a href='#' class='mod_page_item'>上一页</a></li>";
         }
         else
         {
             if($nPage==1)
             {
-                $PageList.="<li><a href='".$this->NameFirst.".".$this->ShortName."'>上一页</a></li>";
+                $PageList.="<li><a class='mod_page_item' href='".$this->NameFirst.".".$this->ShortName."'>上一页</a></li>";
             }
             else
             {
-                $PageList.="<li><a href='".$this->NameFirst."_".$nPage.".".$this->ShortName."'>上一页</a></li>";
+                $PageList.="<li><a class='mod_page_item'  href='".$this->NameFirst."_".$nPage.".".$this->ShortName."'>上一页</a></li>";
             }
         }
         for($i=1;$i<=$totalPage;$i++)
@@ -995,11 +1015,11 @@ class Archives
             {
                 if($nowPage!=1)
                 {
-                    $PageList.="<li><a href='".$this->NameFirst.".".$this->ShortName."'>1</a></li>";
+                    $PageList.="<li><a class='mod_page_item' href='".$this->NameFirst.".".$this->ShortName."'>1</a></li>";
                 }
                 else
                 {
-                    $PageList.="<li class=\"thisclass\"><a href='#'>1</a></li>";
+                    $PageList.="<li class=\"thisclass\"><a class='mod_page_item' href='#'>1</a></li>";
                 }
             }
             else
@@ -1007,21 +1027,21 @@ class Archives
                 $n = $i;
                 if($nowPage!=$i)
                 {
-                    $PageList.="<li><a href='".$this->NameFirst."_".$i.".".$this->ShortName."'>".$n."</a></li>";
+                    $PageList.="<li><a class='mod_page_item' href='".$this->NameFirst."_".$i.".".$this->ShortName."'>".$n."</a></li>";
                 }
                 else
                 {
-                    $PageList.="<li class=\"thisclass\"><a href='#'>{$n}</a></li>";
+                    $PageList.="<li class=\"thisclass\"><a class='mod_page_item' href='#'>{$n}</a></li>";
                 }
             }
         }
         if($lPage <= $totalPage)
         {
-            $PageList.="<li><a href='".$this->NameFirst."_".$lPage.".".$this->ShortName."'>下一页</a></li>";
+            $PageList.="<li><a class='mod_page_item' href='".$this->NameFirst."_".$lPage.".".$this->ShortName."'>下一页</a></li>";
         }
         else
         {
-            $PageList.= "<li><a href='#'>下一页</a></li>";
+            $PageList.= "<li><a class='mod_page_item' href='#'>下一页</a></li>";
         }
         return $PageList;
     }
@@ -1063,7 +1083,7 @@ class Archives
                     }
                     else
                     {
-                        $revalue .= "<a href='view.php?aid=$aid&pageno=$i'>$v</a> \r\n";
+                        $revalue .= "<a class='mod_page_item' href='view.php?aid=$aid&pageno=$i'>$v</a> \r\n";
                     }
                 }
                 $i++;
@@ -1122,7 +1142,7 @@ class Archives
             {
                 if($i==1)
                 {
-                    $revalue .= "<a href='".$this->NameFirst.".".$this->ShortName."'>$v</a> \r\n";
+                    $revalue .= "<a class='mod_page_item' href='".$this->NameFirst.".".$this->ShortName."'>$v</a> \r\n";
                 }
                 else
                 {
@@ -1132,7 +1152,7 @@ class Archives
                     }
                     else
                     {
-                        $revalue .= "<a href='".$this->NameFirst."_".$i.".".$this->ShortName."'>$v</a> \r\n";
+                        $revalue .= "<a class='mod_page_item' href='".$this->NameFirst."_".$i.".".$this->ShortName."'>$v</a> \r\n";
                     }
                 }
                 $i++;
@@ -1212,7 +1232,7 @@ class Archives
             $key = trim($row['keyword']);
             $key_url=trim($row['rpurl']);
             $karr[] = $key;
-            $kaarr[] = "<a href='$key_url' target='_blank'><u>$key</u></a>";
+            $kaarr[] = "<a class='mod_page_item' href='$key_url' target='_blank'><u>$key</u></a>";
         }
 
         // 这里可能会有错误

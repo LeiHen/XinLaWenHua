@@ -1,6 +1,6 @@
 <!--
 @Date:   2016-07-30T07:12:52+08:00
-@Last modified time: 2016-07-30T08:54:44+08:00
+@Last modified time: 2016-07-31T10:15:13+08:00
 -->
 
 
@@ -12,7 +12,7 @@
 	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
 	{dede:include filename="head.htm"/}
 
-    <title>{dede:global.cfg_webname/}</title>
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
 </head>
 <body class="w_min">
 
@@ -26,7 +26,7 @@
 
     <!-- S mod_list_wrap -->
     <ul class="mod_list_wrap">
-        {dede:arclist addfields='body,cover' channelid='1' row='30' orderby='pubdate'}
+        {dede:list addfields='body,cover' channelid='1'  pagesize='6' orderby='pubdate'}
         <li class="mod_list">
             <div class="wrap">
                 <div class="cover">
@@ -37,30 +37,32 @@
                     <span class="wire"></span>
                     <p class="info">[field:description/]</p>
                     <div class="tr">
-                        <a class="u_btn btn_more" href="[field:arcurl/]">阅读更多</a>
+                        <a class="u_btn btn_more" href="[field:arcurl/]" target="_blank">阅读更多</a>
                     </div>
                 </div>
             </div>
         </li>
-        {/dede:arclist}
+        {/dede:list}
 
     </ul>
     <!-- E mod_list_wrap -->
 
     <!-- S page -->
-    <div class="mod_page">
-        <!-- <a href="#" class="mod_page_item">&lt;&lt;</a>
-        <a href="#" class="mod_page_item" rel="prev">&lt;</a>
-        <a href="#" class="mod_page_item active">1</a>
-        <a href="#" class="mod_page_item">2</a>
-        <a href="#" class="mod_page_item">3</a>
-        <a href="#" class="mod_page_item">4</a>
-        <a href="#" class="mod_page_item">5</a>
-        <a href="#" class="mod_page_item" rel="next">&gt;</a>
-        <a href="#" class="mod_page_item">&gt;&gt;</a> -->
+    <ul class="mod_page">
+        <!-- <a href='#' class='mod_page_item'>&lt;&lt;</a>
+        <a href='#' class='mod_page_item' rel='prev'>&lt;</a>
+        <a href='#' class='mod_page_item active'>1</a>
+        <a href='#' class='m
+		od_page_item'>2</a>
+        <a href='#' class='mod_page_item'>3</a>
+        <a href='#' class='mod_page_item'>4</a>
+        <a href='#' class='mod_page_item'>5</a>
+        <a href='#' class='mod_page_item' rel='next'>&gt;</a>
+        <a href='#' class='mod_page_item'>&gt;&gt;</a> -->
 
         {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
-    </div>
+
+    </ul>
     <!-- E page -->
 
 </div>

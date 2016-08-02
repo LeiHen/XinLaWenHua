@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:22+08:00
+@Last modified time: 2016-07-31T10:03:53+08:00
+-->
+
+
+
 <?php   if(!defined('DEDEINC')) exit('Request Error!');
 /**
  * 自动关连文档标签
@@ -8,7 +15,7 @@
  * @license        http://help.dedecms.com/usersguide/license.html
  * @link           http://www.dedecms.com
  */
- 
+
 /*>>dede>>
 <name>相关文档</name>
 <type>全局标记</type>
@@ -20,41 +27,41 @@
 {/dede:likearticle}
 </demo>
 <attributes>
-    <iterm>col:分多少列显示（默认为单列）</iterm> 
+    <iterm>col:分多少列显示（默认为单列）</iterm>
     <iterm>row:返回文档列表总数</iterm>
     <iterm>titlelen:标题长度 等同于titlelength</iterm>
     <iterm>infolen:表示内容简介长度 等同于infolength</iterm>
     <iterm>mytypeid:手工指定要限定的栏目id，用,分开表示多个</iterm>
     <iterm>innertext:单条记录样式(指标签中间的内容)</iterm>
-</attributes> 
+</attributes>
 >>dede>>*/
- 
+
 function lib_likearticle(&$ctag,&$refObj)
 {
     global $dsql;
-    
+
     //属性处理
     $attlist="row|12,titlelen|28,infolen|150,col|1,tablewidth|100,mytypeid|0,byabs|0,imgwidth|120,imgheight|90";
     FillAttsDefault($ctag->CAttribute->Items,$attlist);
     extract($ctag->CAttribute->Items, EXTR_SKIP);
     $revalue = '';
-    
+
     if(empty($tablewidth)) $tablewidth = 100;
     if(empty($col)) $col = 1;
     $colWidth = ceil(100/$col);
     $tablewidth = $tablewidth."%";
     $colWidth = $colWidth."%";
-    
+
     $ids = array();
     $tids = array();
-    
+
     if(!empty($refObj->Fields['tags'])) {
         $keyword = $refObj->Fields['tags'];
     }
     else {
         $keyword = ( !empty($refObj->Fields['keywords']) ? $refObj->Fields['keywords'] : '' );
     }
-    
+
     $typeid = ( !empty($mytypeid) ? $mytypeid : 0 );
     if(empty($typeid))
     {
@@ -65,11 +72,11 @@ function lib_likearticle(&$ctag,&$refObj)
              if(!empty($refObj->Fields['typeid'])) $typeid = $refObj->Fields['typeid'];
         }
     }
-    
+
     if( !empty($typeid) && !preg_match('#,#', $typeid) ) {
         $typeid = GetSonIds($typeid);
     }
-    
+
     $limitRow = $row - count($ids);
     $keyword = '';
     if(!empty($refObj->Fields['keywords']))
@@ -80,10 +87,10 @@ function lib_likearticle(&$ctag,&$refObj)
             foreach($keywords as $k)
             {
                 if($n > 3)  break;
-                 
+
                 if(trim($k)=='') continue;
                 else $k = addslashes($k);
-                 
+
                 $keyword .= ($keyword=='' ? " CONCAT(arc.keywords,' ',arc.title) LIKE '%$k%' " : " OR CONCAT(arc.keywords,' ',arc.title) LIKE '%$k%' ");
                 $n++;
             }
@@ -91,7 +98,7 @@ function lib_likearticle(&$ctag,&$refObj)
     $arcid = (!empty($refObj->Fields['id']) ? $refObj->Fields['aid'] : 0);
     if( empty($arcid) || $byabs==0 )
     {
-        $orderquery = " ORDER BY arc.id desc ";     
+        $orderquery = " ORDER BY arc.id desc ";
     }
     else {
         $orderquery = " ORDER BY ABS(arc.id - ".$arcid.") ";
@@ -116,7 +123,7 @@ function lib_likearticle(&$ctag,&$refObj)
                   FROM `#@__archives` arc LEFT JOIN `#@__arctype` tp ON arc.typeid=tp.id
                  WHERE arc.arcrank>-1 AND  $typeid $orderquery limit 0, $row";
     }
-    
+
     $innertext = trim( $ctag->GetInnerText() );
     if($innertext=='') $innertext = GetSysTemplets('part_arclist.htm');
 
@@ -177,6 +184,17 @@ function lib_likearticle(&$ctag,&$refObj)
                 $row['memberurl'] = $GLOBALS['cfg_memberurl'];
                 $row['templeturl'] = $GLOBALS['cfg_templeturl'];
                 
+                $addfile = $refObj->ChannelUnit->ChannelInfos["listfields"]; //获取文章模型的自定义字段列表
+                if($addfile){
+                  $addfiles = explode(",",$addfile);  //拆分成数组
+                  $len = count($addfiles);
+                  for($j=0;$j<$len;$j++){    //循环处理每一个数组元素
+                    $fname = $addfiles[$j];
+                    //获取每一个元素对应的值，并将元素名作为用于显示的$row数组的ID键，并赋值。
+                    $row[''.$fname.''] = $refObj->Fields[''.$fname.''];
+                  }
+                }
+
                 if(is_array($dtp2->CTags))
                 {
                     foreach($dtp2->CTags as $k=>$ctag)

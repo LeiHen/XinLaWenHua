@@ -1,6 +1,6 @@
 <!--
 @Date:   2016-07-29T02:54:21+08:00
-@Last modified time: 2016-07-30T06:58:33+08:00
+@Last modified time: 2016-07-31T16:16:51+08:00
 -->
 
 
@@ -29,17 +29,17 @@ function showMore()
 	$("#allInfoTD").toggle();
 }
 
-$(function()
-{
-   
-   $.get("index_body.php?dopost=get_seo",function(data)
-  {
-	if(data !== '')
-	{
-		$("#SEOInfo").html(data);
-	}
-  });
-});
+// $(function()
+// {
+//
+//    $.get("index_body.php?dopost=get_seo",function(data)
+//   {
+// 	if(data !== '')
+// 	{
+// 		$("#SEOInfo").html(data);
+// 	}
+//   });
+// });
 </script>
 </head>
 <body leftmargin="8" topmargin='8' bgcolor="#FFFFFF">
@@ -106,12 +106,7 @@ $(function()
                 正在载入中...
             </dd>
         </dl><!--信息统计结束-->
-<dl class='dbox' id="item7">
-            <dt class='lside'><div class='l'>SEO信息</div></dt>
-            <dd id='SEOInfo'>
-			正在载入中……
-            </dd>
-        </dl>
+
         <dl class='dbox' id="item7">
             <dt class='lside'><div class='l'>最新文档</div></dt>
             <dd id='listNews'>
@@ -165,53 +160,9 @@ $(function()
 <!-- //底部 -->
 
 
-<!--  下面是隐藏的项目  -->
-<div id='loaddiv' style='display:none'>
-    <p align='center' style='padding-top:200px'><img src='images/loadinglit.gif' /> 请稍后，正在下载更新文件列表...</p>
-</div>
-<div id="editTab">
-<span id='editTabBody'>请稍候，正在载入...</span>
-</div>
-<div id="addTab">
-<form name='addform' action='index_body.php'>
-<input type='hidden' name='dopost' value='addnew' />
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-   <tr>
-     <td height='28' colspan='3' background="images/tbg.gif">
-         <div style='float:left'><b>增加快捷操作项</b></div>
-      <div style='float:right;padding:3px 10px 0 0;'>
-        <a href="javascript:CloseTab('addTab')"><img src="images/close.gif" width="12" height="12" border="0" /></a>
-      </div>
-     </td>
-   </tr>
-      <tr><td style="height:6px;font-size:1px;border-top:1px solid #8DA659" colspan="2">&nbsp;</td></tr>
-   <tr>
-     <td width="20%" height="28" align="right">链接标题：</td>
-     <td width="70%">
-         <input name="title" type="text" id="title" class='pubinputs' style="width:255px;"/>
-     </td>
-   </tr>
-   <tr>
-     <td height="28" width="20%" align="right">ICO图片：</td>
-     <td width="70%">
-         <input name="ico" type="text" id="ico" class='pubinputs' style="width:255px;"/>
-     </td>
-   </tr>
-   <tr>
-     <td height="28" width="20%" align="right">链接网址：</td>
-     <td width="70%">
-         <input name="link" type="text" id="link" class='pubinputs' style="width:255px;"/>
-     </td>
-   </tr>
-   <tr>
-     <td height="45">&nbsp;</td>
-     <td>
-         <input type="submit" name="Submit" value="保存项目" class="np coolbg" style="width:80px;cursor:pointer" />
-     </td>
-   </tr>
-  </table>
-</form>
-</div>
+
+
+
 </div>
 </body>
 </html>

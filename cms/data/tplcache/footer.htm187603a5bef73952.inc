@@ -1,9 +1,21 @@
 <?php
-$z[0]=Array("global","",1636,1662);
-$z[0][4]['name']="cfg_version";
-$z[1]=Array("global","",1713,1739);
-$z[1][4]['name']="cfg_powerby";
-$z[2]=Array("global","",1751,1775);
-$z[2][4]['name']="cfg_beian";
+$z[0]=Array("global","",984,1016);
+$z[0][4]['name']="cfg_templets_skin";
+$z[1]=Array("global","",1053,1085);
+$z[1][4]['name']="cfg_templets_skin";
+$z[2]=Array("global","",1124,1156);
+$z[2][4]['name']="cfg_templets_skin";
+$z[3]=Array("global","",1268,1300);
+$z[3][4]['name']="cfg_templets_skin";
+$z[4]=Array("global","",1368,1400);
+$z[4][4]['name']="cfg_templets_skin";
+$z[5]=Array("global","",1726,1758);
+$z[5][4]['name']="cfg_templets_skin";
+$z[6]=Array("global","",1834,1860);
+$z[6][4]['name']="cfg_version";
+$z[7]=Array("global","",1911,1937);
+$z[7][4]['name']="cfg_powerby";
+$z[8]=Array("global","",1949,1973);
+$z[8][4]['name']="cfg_beian";
 
 ?>

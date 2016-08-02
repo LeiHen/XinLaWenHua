@@ -1,3 +1,10 @@
+<!--
+@Date:   2016-07-29T02:54:21+08:00
+@Last modified time: 2016-07-31T10:58:45+08:00
+-->
+
+
+
 <?php
 /**
  * 验证图片
@@ -120,6 +127,7 @@ function echo_validate_image( $config = array() )
 
     //输出文字
     $lastc = '';
+    $font_file= str_replace("\\","/",$font_file);
     for($i=0;$i<$rndcodelen;$i++)
     {
         $bc = mt_rand(0, 1);
@@ -153,7 +161,7 @@ function echo_validate_image( $config = array() )
 
     //输出特定类型的图片格式，优先级为 gif -> jpg ->png
     //dump(function_exists("imagejpeg"));
-
+    ob_clean();
     if(function_exists("imagejpeg"))
     {
         header("content-type:image/jpeg\r\n");
