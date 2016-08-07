@@ -154,13 +154,13 @@ $cfg_memcache_mc_oth = '';
 $cfg_cross_sectypeid = 'N';
 $cfg_digg_update = 0;
 $cfg_feedback_guest = 'N';
-$cfg_address = '';
-$cfg_mail = '';
-$cfg_phone = '';
-$cfg_tel = '';
-$cfg_weibo = '';
-$cfg_wechat = '';
-$cfg_qq = 0;
+$cfg_address = '海珠区';
+$cfg_mail = '61955365@qq.com';
+$cfg_phone = '12312341234';
+$cfg_tel = '0768-1234567';
+$cfg_weibo = 'http://weibo.com/xenanews';
+$cfg_wechat = 'weixin';
+$cfg_qq = 61955365;
 $cfg_statistics_code = '<script>
 var _hmt = _hmt || [];
 (function() {
@@ -170,4 +170,9 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>';
+$cfg_company_cn = '北京辛辣文化传播有限公司';
+$cfg_company_en = 'XENA CULTULE';
+$cfg_whatxinla = '北京辛辣文化传播有限公司聚集了国内众多一流媒体人、知名广告人 以及毕业于中戏北影的顶尖写手 团队和优秀的运营团队。<br><br>长年的广告业经验,使其累积了大量知名设计师(服装、饰品、家居)、 手艺人(木匠、铁匠、陶瓷 师、雕塑家)等资源。以此为心,入驻直播 平台成立“辛辣”频道。以最热门的直播形式,直接对话 中国传统工 艺和原创美学。';
+$cfg_mainbusiness = '日常新媒体代运营、热门事件策划及营销、线上线下活动策划及执行、撰写创 意文案、品牌定位及输出、平台或商城的搭建开发、周边产品的定制及开发、 企业公关的管理及危机公关的应对、社群定制、CEO自明星打造';
+$cfg_include = '';
 ?>

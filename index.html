@@ -1,6 +1,6 @@
 <!--
 @Date:   2016-07-13T17:00:57+08:00
-@Last modified time: 2016-08-05T01:54:00+08:00
+@Last modified time: 2016-08-05T19:38:37+08:00
 -->
 
 
@@ -67,14 +67,22 @@
 
 
 		<!-- S banner -->
-		<div class="banner w_max w_min">
+		<div class="banner w_min">
 			<!-- Swiper -->
 			<div class="swiper-container">
+
 			   <div class="swiper-wrapper">
-				   <div class="swiper-slide"><img src="http://temp.im/1520x684" alt="" class="img"></div>
-				   <div class="swiper-slide"><img src="http://temp.im/1520x684" alt="" class="img"></div>
-				   <div class="swiper-slide"><img src="http://temp.im/1520x684" alt="" class="img"></div>
+				   <div class="swiper-slide">
+					   <img src="images/banner/index/img_001_1920x1000.jpg" alt="" class="img">
+				   </div>
+				   <div class="swiper-slide">
+					   <img src="images/banner/index/img_002_1920x1000.jpg" alt="" class="img">
+				   </div>
+				   <div class="swiper-slide">
+					   <img src="images/banner/index/img_003_1920x1000.jpg" alt="" class="img">
+				   </div>
 			   </div>
+
 			   <!-- Add Pagination -->
 			   <div class="swiper-pagination"></div>
 			   <!-- Add Navigation -->
@@ -92,36 +100,36 @@
 
 			<!-- S column_introduce -->
 			<div class="column_wrap">
-				<ul class="column_introduce">
-					<li class="item">
+				<div class="column_introduce">
+					<a class="item" href="#">
 						<i class="icon icon-facialmakeup"></i>
 						<div class="content">
 							<h2 class="title">传统文化</h2>
 							<h4 class="title_sub">不一样的传统感受创新体验</h4>
 						</div>
-					</li>
-					<li class="item">
+					</a>
+					<a class="item" href="#">
 						<i class="icon icon-pen"></i>
 						<div class="content">
 							<h2 class="title">原创美学</h2>
 							<h4 class="title_sub">不一样的传统感受创新体验</h4>
 						</div>
-					</li>
-					<li class="item">
+					</a>
+					<a class="item" href="#">
 						<i class="icon icon-logo"></i>
 						<div class="content">
 							<h2 class="title">关于辛辣</h2>
 							<h4 class="title_sub">不一样的传统感受创新体验</h4>
 						</div>
-					</li>
-					<li class="item">
+					</a>
+					<a class="item" href="#">
 						<i class="icon icon-we"></i>
 						<div class="content">
 							<h2 class="title">联系我们</h2>
 							<h4 class="title_sub">不一样的传统感受创新体验</h4>
 						</div>
-					</li>
-				</ul>
+					</a>
+				</div>
 			</div>
 			<!-- E column_introduce -->
 
@@ -136,7 +144,7 @@
 
 				<div class="relation">
 					<a href="#" class="item" title="weixin"><i class="icon icon-weixin"></i></a>
-					<a href="#" class="item" title="weibo"><i class="icon icon-weibo"></i></a>
+					<a href="#" class="item" title="weibo" target='_blank'><i class="icon icon-weibo"></i></a>
 					<a href="mailto:61955365@qq.com" class="item" title="61955365@qq.com"><i class="icon icon-aite"></i></a>
 				</div>
 				<!-- /分享-->
@@ -197,6 +205,8 @@
 			        prevButton: '.swiper-button-prev',
 					autoplay: 5000
 				})
+
+				$(".mod_header").addClass('pa').addClass('mod_header_white');
 
 			}
 			init();

@@ -11,13 +11,13 @@ $z[4]=Array("global","",340,366);
 $z[4][4]['name']="cfg_webname";
 $z[5]=Array("include","",405,442);
 $z[5][4]['filename']="header.htm";
-$z[6]=Array("global","",472,504);
+$z[6]=Array("global","",477,509);
 $z[6][4]['name']="cfg_templets_skin";
-$z[7]=Array("field","",639,660);
+$z[7]=Array("field","",570,591);
 $z[7][4]['name']="content";
-$z[8]=Array("global","",679,711);
+$z[8]=Array("global","",680,712);
 $z[8][4]['name']="cfg_templets_skin";
-$z[9]=Array("include","",2574,2611);
+$z[9]=Array("include","",2992,3029);
 $z[9][4]['filename']="footer.htm";
 
 ?>

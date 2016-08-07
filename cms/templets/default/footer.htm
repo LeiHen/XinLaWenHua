@@ -1,6 +1,6 @@
 <!--
 @Date:   2016-07-30T07:12:52+08:00
-@Last modified time: 2016-07-31T02:54:55+08:00
+@Last modified time: 2016-08-05T20:30:17+08:00
 -->
 
 <!-- S footer -->
@@ -9,14 +9,14 @@
     <div class="w_max ">
 
         <div class="relation">
-            <a href="#" class="item" title="weixin"><i class="icon icon-weixin"></i></a>
-            <a href="#" class="item" title="weibo"><i class="icon icon-weibo"></i></a>
-            <a href="mailto:61955365@qq.com" class="item" title="61955365@qq.com"><i class="icon icon-aite"></i></a>
+            <a href="#" class="item" title="{dede:global.cfg_wechat/}"><i class="icon icon-weixin" ></i></a>
+            <a href="{dede:global.cfg_weibo/}" class="item" target='_blank' title="{dede:global.cfg_weibo/}"><i class="icon icon-weibo"></i></a>
+            <a href="mailto:{dede:global.cfg_mail/}" class="item" title="{dede:global.cfg_mail/}" ><i class="icon icon-aite"></i></a>
         </div>
         <!-- /分享-->
 
-        <p class="txt companyname">北京辛辣文化传播有限公司</p>
-        <p class="txt companyname_en">XENA CULTULE</p>
+        <p class="txt companyname">{dede:global.cfg_company_cn/}</p>
+        <p class="txt companyname_en">{dede:global.cfg_company_en/}</p>
     </div>
 
 </footer>
@@ -50,12 +50,13 @@
 </script>
 
 <![endif]-->
-<!--[if lte IE 7]>
-<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/hack/font-ie7.js"></script>
-<![endif]-->
 
 
+<!-- 百度统计 -->
+{dede:global.cfg_statistics_code/}
 
+<!-- 360 自动收录 -->
+{dede:global.cfg_include/}
 
 <!-- <strong>DedeCMS_{dede:global.cfg_version/}</strong> &copy; 2004-2011
 <div class="copyright">{dede:global.cfg_powerby/}&nbsp;&nbsp;{dede:global.cfg_beian/}</div> -->

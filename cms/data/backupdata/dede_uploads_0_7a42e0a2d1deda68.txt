@@ -5,3 +5,6 @@ INSERT INTO `dede_uploads` VALUES('4','0','160731/1-160I1102141356.jpg','/upload
 INSERT INTO `dede_uploads` VALUES('5','0','160731/1-160I1131IW44.jpg','/uploads/160731/1-160I1131IW44.jpg','1','1920','1200','0','283084','1469942258','1');
 INSERT INTO `dede_uploads` VALUES('6','8','banner 2','/uploads/160731/1-160I1144450207.jpg','1','1920','1200','0','263311','1469947490','1');
 INSERT INTO `dede_uploads` VALUES('7','9','banner 3','/uploads/160731/1-160I114454TE.jpg','1','1600','900','0','723802','1469947548','1');
+INSERT INTO `dede_uploads` VALUES('8','7','banner 1','/uploads/160805/1-160P5200126258.jpg','1','1920','1000','0','142030','1470398486','1');
+INSERT INTO `dede_uploads` VALUES('9','8','banner 2','/uploads/160805/1-160P5200153148.jpg','1','1920','1000','0','86020','1470398513','1');
+INSERT INTO `dede_uploads` VALUES('10','9','banner 3','/uploads/160805/1-160P52002411O.jpg','1','1920','1000','0','334560','1470398561','1');

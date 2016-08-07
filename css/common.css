@@ -1,6 +1,6 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-08-05T07:39:22+08:00
+* @Last modified time: 2016-08-05T20:28:48+08:00
 */
 @charset "UTF-8";
 /**
@@ -73,156 +73,171 @@ a:active {
 /* line 55, common.less */
 .mod_header {
   overflow: hidden;
-  z-index: 1;
+  width: 100%;
+  height: 100px;
+  z-index: 2;
 }
-/* line 62, common.less */
+/* line 66, common.less */
 .mod_header .logo .icon {
   display: block;
   float: left;
-  padding: 14px 10px 0;
+  padding: 20px 10px 0;
   font-size: 10rem;
   line-height: 0.5;
-  color: #ffffff;
+  color: #b6263e;
 }
-/* line 75, common.less */
+/* line 79, common.less */
 .mod_header .logo:hover .icon {
   -webkit-transform: scale(0.98);
       -ms-transform: scale(0.98);
           transform: scale(0.98);
 }
+/* line 90, common.less */
+.mod_header_white .logo .icon {
+  color: #ffffff;
+}
+/* line 95, common.less */
+.mod_header_white .mod_nav_main .link {
+  color: #ffffff;
+}
+/* line 97, common.less */
+.mod_header_white .mod_nav_main .link::before {
+  background: #ffffff;
+}
 /* mod_footer
  ------------------------------------------------------------- */
-/* line 96, common.less */
+/* line 113, common.less */
 .mod_footer {
   height: 300px;
   background: #b6263e;
   box-shadow: inset 0px 10px 40px -10px #000000;
 }
-/* line 103, common.less */
+/* line 120, common.less */
 .mod_footer .relation {
   padding: 110px 0 30px 0;
   text-align: center;
 }
-/* line 106, common.less */
+/* line 123, common.less */
 .mod_footer .relation .item {
   padding: 0 20px;
   width: 50px;
   height: 50px;
   color: #ffffff;
 }
-/* line 116, common.less */
+/* line 133, common.less */
 .mod_footer .relation .icon {
   font-size: 40px;
   line-height: 1;
 }
-/* line 125, common.less */
+/* line 142, common.less */
 .mod_footer .txt {
   color: #ffffff;
   text-align: center;
 }
-/* line 129, common.less */
+/* line 146, common.less */
 .mod_footer .companyname {
   font-size: 30px;
 }
-/* line 133, common.less */
+/* line 150, common.less */
 .mod_footer .companyname_en {
   margin: 10px 0 0 0;
   font-size: 14px;
+  text-transform: uppercase;
 }
 /* mod_nav_main
  ------------------------------------------------------------- */
-/* line 183, common.less */
+/* line 201, common.less */
 .mod_nav_main {
-  padding: 30px 0;
+  height: 100px;
   text-align: right;
 }
-/* line 187, common.less */
+/* line 205, common.less */
 .mod_nav_main .link {
   position: relative;
   margin: 0 30px;
-  color: #ffffff;
-  line-height: 1.6;
-  font-size: 24px;
+  color: #b6263e;
+  line-height: 100px;
+  font-size: 16px;
 }
-/* line 197, common.less */
+/* line 215, common.less */
 .mod_nav_main .link::before {
   content: "";
   position: absolute;
   left: -30px;
   top: 50%;
   display: inline-block;
-  margin: -5px 0 0 -5px;
-  width: 10px;
-  height: 10px;
-  background: #ffffff;
+  margin: -4px 0 0 -4px;
+  width: 8px;
+  height: 8px;
+  background: #b6263e;
   border-radius: 50%;
 }
-/* line 211, common.less */
+/* line 230, common.less */
 .mod_nav_main .link:first-child::before {
   display: none;
 }
-/* line 216, common.less */
+/* line 235, common.less */
 .mod_nav_main .link.active,
 .mod_nav_main .link:hover {
   text-decoration: underline;
 }
 /* nav_crumbs
  ------------------------------------------------------------- */
-/* line 226, common.less */
+/* line 245, common.less */
 .mod_nav_crumbs {
   display: block;
-  margin: 180px 0 110px 0;
+  margin: 40px 0 40px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 231, common.less */
+/* line 252, common.less */
 .mod_nav_crumbs .link {
   position: relative;
   display: inline-block;
   padding: 0.5em 1em;
   color: #3c3c3c;
-  font-size: 30px;
+  font-style: 16px;
   line-height: 1em;
 }
-/* line 239, common.less */
+/* line 262, common.less */
 .mod_nav_crumbs .link::before {
   content: "";
   position: absolute;
-  right: -5px;
-  bottom: -6px;
-  width: 10px;
-  height: 10px;
+  right: -4px;
+  bottom: -5px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 250, common.less */
+/* line 273, common.less */
 .mod_nav_crumbs .link.active,
 .mod_nav_crumbs .link:hover {
   color: #b6263e;
 }
-/* line 254, common.less */
+/* line 277, common.less */
 .mod_nav_crumbs .link.active::before,
 .mod_nav_crumbs .link:hover::before {
   background: #b6263e;
 }
 /* list
  ------------------------------------------------------------- */
-/* line 264, common.less */
+/* line 287, common.less */
 .mod_list_wrap {
   margin: 20px auto;
 }
-/* line 268, common.less */
+/* line 291, common.less */
 .mod_list {
   height: 280px;
   margin: 76px auto 88px auto;
   background: #e4e4e4;
 }
-/* line 273, common.less */
+/* line 296, common.less */
 .mod_list .wrap {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
-/* line 279, common.less */
+/* line 302, common.less */
 .mod_list .cover {
   position: absolute;
   display: block;
@@ -235,24 +250,24 @@ a:active {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 290, common.less */
+/* line 313, common.less */
 .mod_list .cover .img {
   max-width: 100%;
   display: block;
 }
-/* line 293, common.less */
+/* line 316, common.less */
 .mod_list .cover .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 299, common.less */
+/* line 322, common.less */
 .mod_list .fr {
   width: 540px;
   height: 280px;
   margin: 0 0 0 400px;
 }
-/* line 305, common.less */
+/* line 328, common.less */
 .mod_list .title {
   margin: 70px 0 20px 0;
   font-size: 20px;
@@ -261,7 +276,7 @@ a:active {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 316, common.less */
+/* line 339, common.less */
 .mod_list .wire {
   position: relative;
   display: block;
@@ -269,7 +284,7 @@ a:active {
   margin: 0 0 20px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 322, common.less */
+/* line 345, common.less */
 .mod_list .wire::before {
   content: "";
   position: absolute;
@@ -281,13 +296,13 @@ a:active {
   border: 4px solid #e4e4e4;
   border-radius: 50%;
 }
-/* line 335, common.less */
+/* line 358, common.less */
 .mod_list .info {
   height: 160px;
   font-size: 14px;
   line-height: 1.6;
 }
-/* line 341, common.less */
+/* line 364, common.less */
 .mod_list .btn_more {
   margin: 0 0 0 auto;
   padding: 8px;
@@ -295,25 +310,25 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 348, common.less */
+/* line 371, common.less */
 .mod_list .btn_more:hover {
   color: #b6263e;
   border-color: #b6263e;
 }
 /* article
  ------------------------------------------------------------- */
-/* line 361, common.less */
+/* line 384, common.less */
 .mod_article .title {
   position: relative;
-  padding: 50px 0;
-  margin: 0 0 120px 0;
-  font-size: 40px;
+  padding: 40px 0;
+  margin: 0 0 40px 0;
+  font-size: 28px;
   line-height: 1.4;
   color: #3c3c3c;
   font-weight: normal;
   border-bottom: 2px solid #3c3c3c;
 }
-/* line 371, common.less */
+/* line 394, common.less */
 .mod_article .title::before {
   content: "";
   position: absolute;
@@ -325,38 +340,38 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 384, common.less */
+/* line 407, common.less */
 .mod_article .cover {
   padding: 0 20px 70px 20px;
   margin: 0 0 100px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 389, common.less */
+/* line 412, common.less */
 .mod_article .cover .img {
   margin: 0 auto 40px auto;
   width: 100%;
   max-width: display: block;
 }
-/* line 397, common.less */
+/* line 420, common.less */
 .mod_article .cover p {
   color: #8c8989;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
 }
-/* line 405, common.less */
+/* line 428, common.less */
 .mod_article .content {
   margin: 0 0 120px 0 ;
   color: #3c3c3c;
   line-height: 1.6em;
 }
-/* line 410, common.less */
+/* line 433, common.less */
 .mod_article .content p {
   margin: 2em 0;
 }
 /* page
   ------------------------------------------------------------- */
-/* line 420, common.less */
+/* line 443, common.less */
 .mod_page {
   margin: 40px auto;
   padding: 40px 20px 0 20px;
@@ -364,24 +379,26 @@ a:active {
   text-align: right;
   overflow: hidden;
 }
-/* line 427, common.less */
+/* line 450, common.less */
 .mod_page > li {
   display: inline-block;
 }
-/* line 431, common.less */
+/* line 454, common.less */
 .mod_page_item {
   display: inline-block;
-  padding: 0 6px;
+  padding: 0 4px;
   margin: 0 4px;
-  height: 20px;
+  min-width: 18px;
+  height: 26px;
   border-radius: 15px;
   border: 1px solid #3c3c3c;
   text-align: center;
   line-height: 1.6;
+  line-height: 26px;
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 448, common.less */
+/* line 471, common.less */
 .mod_page_item:hover,
 .mod_page_item.active {
   color: #ffffff;
@@ -390,12 +407,12 @@ a:active {
 }
 /* share
  ------------------------------------------------------------- */
-/* line 460, common.less */
+/* line 483, common.less */
 .mod_share {
   margin: 10px auto;
   text-align: right;
 }
-/* line 464, common.less */
+/* line 487, common.less */
 .mod_share .link {
   display: inline-block;
   margin: 0 5px;
@@ -408,27 +425,27 @@ a:active {
   font-size: 30px;
   text-align: center;
 }
-/* line 477, common.less */
+/* line 500, common.less */
 .mod_share .link:hover {
   background: #b6263e;
 }
 /*  list4
  ------------------------------------------------------------- */
-/* line 492, common.less */
+/* line 515, common.less */
 .mod_list4 .item {
   display: inline-block;
   width: 200px;
   margin-left: 114px;
 }
-/* line 497, common.less */
+/* line 520, common.less */
 .mod_list4 .item:first-child {
   margin-left: 0;
 }
-/* line 502, common.less */
+/* line 525, common.less */
 .mod_list4 .item:hover .title {
   color: #b6263e;
 }
-/* line 507, common.less */
+/* line 530, common.less */
 .mod_list4 .img_wrap {
   width: 200px;
   height: 200px;
@@ -437,18 +454,18 @@ a:active {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-/* line 515, common.less */
+/* line 538, common.less */
 .mod_list4 .img {
   display: block;
   max-width: 100%;
 }
-/* line 519, common.less */
+/* line 542, common.less */
 .mod_list4 .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 523, common.less */
+/* line 546, common.less */
 .mod_list4 .title {
   margin: 20px 0;
   text-align: center;
@@ -460,18 +477,18 @@ a:active {
 }
 /* recommend
  ------------------------------------------------------------- */
-/* line 537, common.less */
+/* line 560, common.less */
 .mod_recommend {
   margin: 100px auto;
 }
-/* line 540, common.less */
+/* line 563, common.less */
 .mod_recommend .wire {
   position: relative;
   margin: 30px 0;
   height: 1px;
   background: #3c3c3c;
 }
-/* line 546, common.less */
+/* line 569, common.less */
 .mod_recommend .wire .title {
   position: absolute;
   top: -22px;
@@ -482,7 +499,7 @@ a:active {
   line-height: 1;
   font-weight: normal;
 }
-/* line 557, common.less */
+/* line 580, common.less */
 .mod_recommend .wire::before {
   content: "";
   position: absolute;
@@ -493,7 +510,7 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 569, common.less */
+/* line 592, common.less */
 .mod_recommend .mod_list4 {
   margin: 60px 0;
 }

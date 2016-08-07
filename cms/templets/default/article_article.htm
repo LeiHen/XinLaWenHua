@@ -55,7 +55,7 @@
 					<div class="img_wrap">
 						<img src="[field:cover/]" alt="[field:title/]" class="img" title="[field:title/]">
 					</div>
-					<h3 class="title">[field:title/]</h3>
+					<h3 class="title" title="[field:title/]" alt="[field:title/]">[field:title/]</h3>
 				</a>
 				{/dede:likearticle}
 
@@ -96,12 +96,19 @@
 
 
 	{dede:include filename="footer.htm"/}
+	
 
-
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2050012" charset="utf-8"></script>
 	<script type="text/javascript">
 		//初始化 统一入口
 		function init(){
 
+			var jiathis_config={
+				data_track_clickback:true,
+				summary:"",
+				shortUrl:false,
+				hideMore:true
+			}
 
 		}
 		init();

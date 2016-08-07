@@ -1,6 +1,6 @@
 /**
 * @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-08-05T07:39:22+08:00
+* @Last modified time: 2016-08-05T20:28:48+08:00
 */
 
 
@@ -56,19 +56,23 @@ a:link,a:visited,a:hover,a:active{
 
 	// background: @c_main;
 	overflow: hidden;
-	z-index: 1;
+	width: 100%;
+	height: 100px;
+	// background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, transparent 50%);
+	z-index: 2;
 
 	.logo{
+		// display: none;
 		.icon{
 			display: block;
 			float:left;
 
 			// height: 68px;
-			padding: 14px 10px 0;
+			padding: 20px 10px 0;
 
 			font-size: 10rem;
 			line-height: 0.5;
-			color:@c_white;
+			color:@c_main;
 		}
 
 		&:hover{
@@ -79,11 +83,24 @@ a:link,a:visited,a:hover,a:active{
 		}
 	}
 
-	.mod_nav_main{
+
+
+	&_white{
+		.logo{
+			.icon{
+				color:@c_white;
+			}
+		}
+		.mod_nav_main{
+			.link{
+				color: @c_white;
+				&::before{
+					background: @c_white;
+				}
+			}
+		}
 
 	}
-
-	// &_
 
 }
 
@@ -133,6 +150,7 @@ a:link,a:visited,a:hover,a:active{
 	.companyname_en{
 		margin: 10px 0 0 0;
 		font-size: 14px;
+		text-transform: uppercase;
 	}
 
 }
@@ -181,17 +199,17 @@ a:link,a:visited,a:hover,a:active{
 
 
 .mod_nav_main{
-	padding: 30px 0;
+	height: 100px;
 	text-align: right;
 
 	.link{
 		position: relative;
-		// padding: 0 30px;
 		margin: 0 30px;
-
-		color: @c_white;
-		line-height: 1.6;
-		font-size: 24px;
+		// color: @c_white;
+		color: @c_main;
+		line-height: 100px;
+		// font-size: 24px;
+		font-size: 16px;
 
 
 		&::before{
@@ -200,10 +218,11 @@ a:link,a:visited,a:hover,a:active{
 			left:-30px;
 			top:50%;
 			display: inline-block;
-			margin: -5px 0 0 -5px;
-			width: 10px;
-			height:10px;
-			background: @c_white;
+			margin: -4px 0 0 -4px;
+			width: 8px;
+			height:8px;
+			// background: @c_white;
+			background: @c_main;
 			border-radius: 50%;
 		}
 
@@ -225,7 +244,9 @@ a:link,a:visited,a:hover,a:active{
  ------------------------------------------------------------- */
 .mod_nav_crumbs{
 	display: block;
-	margin: 180px 0 110px 0;
+	// margin: 180px 0 110px 0;
+	// margin: 40px 0 110px 0;
+	margin: 40px 0 40px 0;
 	border-bottom: 1px dashed @c_f;
 
 	.link{
@@ -233,16 +254,18 @@ a:link,a:visited,a:hover,a:active{
 		display: inline-block;
 		padding: 0.5em 1em;
 		color: @c_f;
-		font-size: 30px;
+		// font-size: 30px;
+		// font-size: 24px;
+		font-style: 16px;
 		line-height: 1em;
 
 		&::before{
 			content: "";
 			position: absolute;
-			right: -5px;
-			bottom: -6px;
-			width: 10px;
-			height: 10px;
+			right: -4px;
+			bottom: -5px;
+			width: 8px;
+			height: 8px;
 			border-radius: 50%;
 			background: @c_f;
 		}
@@ -360,9 +383,9 @@ a:link,a:visited,a:hover,a:active{
 
 	.title{
 		position: relative;
-		padding: 50px 0;
-		margin: 0 0 120px 0;
-		font-size: 40px;
+		padding: 40px 0;
+		margin: 0 0 40px 0;
+		font-size: 28px;
 		line-height: 1.4;
 		color: @c_f;
 		font-weight: normal;
@@ -430,17 +453,17 @@ a:link,a:visited,a:hover,a:active{
 
 	&_item{
 		display: inline-block;
-		padding:0 6px;
+		padding:0 4px;
 		margin:0 4px;
-
-		// width:20px;
-		height: 20px;
+		min-width: 18px;
+		height: 26px;
 
 		border-radius: 15px;
 		border: 1px solid @c_f;
 
 		text-align: center;
 		line-height: 1.6;
+		line-height: 26px;
 		font-size: 14px;
 
 		color: @c_f;
