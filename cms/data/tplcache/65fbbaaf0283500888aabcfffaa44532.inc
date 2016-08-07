@@ -1,0 +1,1 @@
+<div class="swiper-slide"><img src="[field:img /]" alt="[field:typename /]" class="img"></div>
