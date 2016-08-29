@@ -1,0 +1,10 @@
+INSERT INTO `dede_uploads` VALUES('1','1','【THE COMMON】 走出同溫層 走出同溫層 藏身公館夜','/uploads/160730/1-160I00SR1301.jpg','1','422','422','0','52122','1469839101','1');
+INSERT INTO `dede_uploads` VALUES('2','2','五部门推进“五证合一”改革 10月1日起实施','/uploads/160731/1-160I1025910125.jpg','1','330','330','0','60802','1469905150','1');
+INSERT INTO `dede_uploads` VALUES('3','1','【THE COMMON】 走出同溫層 走出同溫層 藏身公館夜','/uploads/allimg/160731/1-160I110052c16.jpg','1','330','330','0','51235','1469930729','1');
+INSERT INTO `dede_uploads` VALUES('4','0','160731/1-160I1102141356.jpg','/uploads/160731/1-160I1102141356.jpg','1','1920','1286','0','169672','1469931701','1');
+INSERT INTO `dede_uploads` VALUES('5','0','160731/1-160I1131IW44.jpg','/uploads/160731/1-160I1131IW44.jpg','1','1920','1200','0','283084','1469942258','1');
+INSERT INTO `dede_uploads` VALUES('6','8','banner 2','/uploads/160731/1-160I1144450207.jpg','1','1920','1200','0','263311','1469947490','1');
+INSERT INTO `dede_uploads` VALUES('7','9','banner 3','/uploads/160731/1-160I114454TE.jpg','1','1600','900','0','723802','1469947548','1');
+INSERT INTO `dede_uploads` VALUES('8','7','banner 1','/uploads/160805/1-160P5200126258.jpg','1','1920','1000','0','142030','1470398486','1');
+INSERT INTO `dede_uploads` VALUES('9','8','banner 2','/uploads/160805/1-160P5200153148.jpg','1','1920','1000','0','86020','1470398513','1');
+INSERT INTO `dede_uploads` VALUES('10','9','banner 3','/uploads/160805/1-160P52002411O.jpg','1','1920','1000','0','334560','1470398561','1');

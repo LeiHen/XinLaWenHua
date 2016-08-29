@@ -1,0 +1,3 @@
+INSERT INTO `dede_banner` VALUES('7','5','','','127.0.0.1','/uploads/160805/1-160P5200126258.jpg');
+INSERT INTO `dede_banner` VALUES('8','5','','','127.0.0.1','/uploads/160805/1-160P5200153148.jpg');
+INSERT INTO `dede_banner` VALUES('9','5','','','127.0.0.1','/uploads/160805/1-160P52002411O.jpg');

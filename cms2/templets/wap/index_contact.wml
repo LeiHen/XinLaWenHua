@@ -1,0 +1,101 @@
+<!--
+@Date:   2016-07-31T10:19:26+08:00
+@Last modified time: 2016-08-05T19:58:18+08:00
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+	{dede:include filename="head.htm"/}
+
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+</head>
+<body class="w_min">
+
+{dede:include filename="header.htm"/}
+
+<!-- S banner -->
+<img src="{dede:global.cfg_templets_skin/}/images/contact_us.jpg" alt="" class="contactus_banner">
+<!-- {dede:field.content/} -->
+<!-- E banner -->
+
+
+<!-- S main -->
+<div class="main w_max w_min ">
+
+    <!-- <img src="{dede:global.cfg_templets_skin/}/images/temp/temp_c.jpg" alt="" class="w"> -->
+
+	<ul class="contactus">
+		<li class="contactus_itme contactus_special triangle_r">
+			<div class="contactus_content">
+				<i class="icon icon-window"></i>
+				<h1 class="title">什么是辛辣</h1>
+				<h2 class="title_sub">company introduction</h2>
+			</div>
+		</li>
+		<li class="contactus_itme">
+			<div class="contactus_content">
+				{dede:global.cfg_whatxinla/}
+			 <br>
+			</div>
+		</li>
+		<li class="contactus_itme contactus_special triangle_b">
+			<div class="contactus_content">
+				<i class="icon icon-user"></i>
+				<h1 class="title">联系我们</h1>
+				<h2 class="title_sub">Contact us</h2>
+			</div>
+		</li>
+	</ul>
+
+	<ul class="contactus">
+		<li class="contactus_itme">
+			<div class="contactus_content">
+				{dede:global.cfg_mainbusiness/}
+			</div>
+		</li>
+		<li class="contactus_itme contactus_special triangle_l">
+			<div class="contactus_content">
+				<i class="icon icon-shopcar"></i>
+				<h1 class="title">主营业务</h1>
+				<h2 class="title_sub">main business</h2>
+			</div>
+		</li>
+		<li class="contactus_itme ">
+			<div class="contactus_content e_contact">
+				<h2 class="companyname">北京辛辣文化传播有限公司</h2>
+				<h3 class="companyname_en">XENA CULTULE</h3>
+				<a href="mailto:{dede:global.cfg_mail/}" class="link" target="_blank">
+					<i class="icon icon-aite"></i>
+					{dede:global.cfg_mail/}
+				</a>
+				<a href="{dede:global.cfg_weibo/}" class="link" target="_blank">
+					<i class="icon icon-weibo"></i>
+					{dede:global.cfg_weibo/}
+				</a>
+			</div>
+		</li>
+	</ul>
+
+</div>
+<!-- E main -->
+
+{dede:include filename="footer.htm"/}
+
+
+<script type="text/javascript">
+	//初始化 统一入口
+	function init(){
+
+		$(".mod_header").addClass('pa').addClass('mod_header_white');
+
+	}
+	init();
+</script>
+
+</body>
+</html>

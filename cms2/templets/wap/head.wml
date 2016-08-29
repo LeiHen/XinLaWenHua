@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<meta name="author" content="流星的泪痕 QQ:61955365">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<!-- 启用360浏览器的极速模式(webkit)-->
+<meta name="renderer" content="webkit">
+
+<!-- mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="wap-font-scale" content="no"/>
+
+
+<!--[if lt IE 9 ]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/base.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/page.css">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font.css">
+<!-- <link rel="stylesheet" href="css/responsive.css"> -->
