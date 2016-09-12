@@ -77,6 +77,10 @@ a:active {
   height: 100px;
   z-index: 2;
 }
+/* line 64, common.less */
+.mod_header .logo {
+  display: inline-block;
+}
 /* line 66, common.less */
 .mod_header .logo .icon {
   display: block;

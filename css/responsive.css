@@ -73,18 +73,49 @@
 /* 宽桌面 */
 /* 界于竖直平板与水平平板/桌面之间 */
 /*@media (min-width: 768px) and (max-width: 979px) {
-  
+
 }*/
 /*@media (max-width: 979px) {
-  
+
 }
 
 
 @media (min-width: 980px) {
-  
+
 }*/
 /* 宽桌面 */
 /*@media (min-width: 1200px) {
-  
-  
+
+
 }*/
+/* line 119, responsive.less */
+.w_min {
+  min-width: auto;
+}
+/** index
+----------------------------------------------------------------*/
+/* line 128, responsive.less */
+.mod_header {
+  position: static;
+  width: auto;
+  height: 70px;
+  padding: 0 30px;
+  background: #ffffff;
+  overflow: hidden;
+}
+/* line 138, responsive.less */
+.mod_header .logo .icon {
+  padding: 20px 0 0;
+  font-size: 7.2rem;
+  color: #b6263e;
+}
+/* line 145, responsive.less */
+.mod_header .home {
+  float: right;
+}
+/* line 147, responsive.less */
+.mod_header .home .icon {
+  color: #b6263e;
+  line-height: 70px;
+  font-size: 2rem;
+}

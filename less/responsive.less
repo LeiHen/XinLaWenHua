@@ -31,7 +31,7 @@
   .hidden_phone {
     display: none;
   }
-  
+
   .visible_desktop {
     display: none;
   }
@@ -59,57 +59,101 @@
 
 /* 水平状态的手机 android */
 @media (max-width: 360px) {
-  
+
 }
 
 
 /* 水平状态的手机及以下 iphone竖直 */
 @media (max-width: 480px) {
-  
+
 }
 
 /* 界于水平手机与竖直平板之间 */
 @media (max-width: 767px) {
-  
+
 }
 
 /* 界于竖直平板与水平平板/桌面之间 */
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+
 }
 
 
 /* 宽桌面 */
 @media (max-width: 1200px) {
-  
-  
+
+
 }
 
 
 /* 宽桌面 */
 @media (min-width: 1400px) {
-  
-  
+
+
 }
 
 
 /* 界于竖直平板与水平平板/桌面之间 */
 /*@media (min-width: 768px) and (max-width: 979px) {
-  
+
 }*/
 
 
 /*@media (max-width: 979px) {
-  
+
 }
 
 
 @media (min-width: 980px) {
-  
+
 }*/
 
 /* 宽桌面 */
 /*@media (min-width: 1200px) {
-  
-  
+
+
 }*/
+
+
+
+.w_min{
+	min-width: auto;
+}
+
+
+
+
+/** index
+----------------------------------------------------------------*/
+.mod_header{
+	position: static;
+	width: auto;
+	height: 70px;
+	padding: 0 30px;
+	background: @c_white;
+	overflow: hidden;
+
+
+	.logo{
+		.icon{
+			padding: 20px 0 0;
+			font-size: 7.2rem;
+			color: @c_main;
+		}
+	}
+
+	.home{
+		float: right;
+		.icon{
+			color: @c_main;
+			line-height: 70px;
+			font-size: 2rem;
+
+		}
+	}
+
+}
+
+.home{
+
+}
