@@ -114,19 +114,38 @@
 
 }*/
 
-
-
-.w_min{
-	min-width: auto;
+body{
+	background-color: @c_white;
+	// width: 100%;
 }
 
+.w_min{
+
+	min-width: 0;
+	// overflow:hidden !important;
+	// min-width: 100%;
+	// box-sizing: border-box;
+
+}
+
+.w_max{
+	max-width: auto;
+	// overflow:hidden !important;
 
 
+	// max-width: 100%;
+	// box-sizing: border-box;
+}
+
+.h60{
+	height: 60px;
+}
 
 /** index
 ----------------------------------------------------------------*/
 .mod_header{
 	position: static;
+	// width: 0;
 	width: auto;
 	height: 70px;
 	padding: 0 30px;
@@ -154,6 +173,406 @@
 
 }
 
-.home{
+/* nav_crumbs
+ ------------------------------------------------------------- */
+.mod_nav_crumbs{
+	margin: 10px auto;
+	padding: 0 20px;
+	// max-width: 80%;
+	.link{
+		font-size: 14px;
+	}
+}
+
+
+/* list
+ ------------------------------------------------------------- */
+.mod_list_wrap{
+	margin:20px 30px;
+	min-width: 176px;
+	// max-width: 80%;
+	width: auto;
+	border: 1px solid @c_main;
+	border: none;
+	border-left: none;
+	border-right: none;
+}
+.mod_list{
+	height:auto;
+	margin: 20px auto;
+	padding: 36px 0 0 0;
+	background: @c_white;
+
+	.wrap{
+		position: relative;
+		width: auto;
+		margin:0 auto;
+		padding: 10px 0 0 96px;
+	}
+
+	.cover{
+		left: 10px;
+		float: none;
+		margin: 0;
+		width: 76px;
+		height: 76px;
+	}
+
+	.fr{
+		float:none;
+		width: auto;
+		height: auto;
+		margin: 0;
+	}
+
+	.title{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		border-bottom: 1px solid @c_f;
+		font-size: 16px;
+		line-height: 36px;
+		transform: translate(0,-100%);
+	}
+	.wire{
+		display: none;
+	}
+	.info{
+		height: 60px;
+		overflow : hidden;
+		font-size: 12px;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+
+	.btn_more{
+		margin: auto;
+		padding: 4px;
+		border: none;
+		font-size: 12px;
+
+		&:hover{
+			border-color:none;
+
+		}
+	}
+
+}
+
+/* article
+ ------------------------------------------------------------- */
+.mod_article{
+	padding: 0 30px;
+
+	.title{
+		padding: 40px 0 30px 0;
+		margin: 0;
+		font-size: 10px;
+		border: none;
+
+		&::before{
+			display: none;
+		}
+	}
+
+	.cover{
+		padding: 0 0 25px 0;
+		margin: 0;
+		border:none;
+
+		.img{
+			margin: 0;
+		}
+	}
+
+	.content{
+		margin: 0 0 40px 0 ;
+		font-size: 7px;
+
+		p{
+			margin: 2em 0;
+		}
+	}
+}
+
+
+/* page
+ ------------------------------------------------------------- */
+.mod_page{
+   margin: 20px auto;
+   padding: 20px 30px;
+   &_item{
+	   margin: 0;
+	   padding:0 4px;
+	   font-size: 12px;
+   }
+}
+
+
+
+/** banner
+----------------------------------------------------------------*/
+.banner{
+	min-height:0;
+	// height: 0;
+	height: auto;
+	.img{
+		max-width: 100%;
+	}
+}
+
+/** column_introduce
+----------------------------------------------------------------*/
+.column_wrap{
+	margin: 0 auto;
+	border: none;
+}
+.column_introduce{
+	margin: 20px auto;
+	padding: 0;
+	width: auto;
+
+	.item{
+		position: relative;
+		display: block;
+		margin:20px 30px;
+		padding: 0 4px 0 80px;
+		min-width: 176px;
+		max-width: 80%;
+		width: auto;
+		text-align: left;
+	}
+
+	.icon{
+		position: absolute;
+		left: 0;
+		width: 65px;
+		height: 65px;
+
+		border-radius: 50%;
+		border: 1px solid @c_main;
+		line-height: 68px;
+		font-size: 50px;
+		text-align: center;
+		color: @c_main;
+	}
+
+	.content{
+		position: relative;
+		margin: auto;
+		padding: 0;
+		height: 70px;
+		width: auto;
+		background: transparent;
+		color: @c_main;
+		line-height: 1.2;
+		// vertical-align: bottom;
+
+
+		// 圆点
+		&:before{
+			content: "";
+			position:absolute;
+			// top:-2px;
+			top: 50%;
+			right: 0;
+			left: auto;
+			width: 8px;
+			height: 8px;
+
+			background: @c_main;
+			border: 0 solid @c_bg;
+			border-radius:50%;
+
+			transform: translate(0,-3px);
+			z-index: 2;
+		}
+		// 竖条
+		&::after{
+			content: "";
+			position:absolute;
+			left:auto;
+			bottom: auto;
+			top: 50%;
+			height: 1px;
+			width: 100%;
+			background: @c_main;
+			z-index: 1;
+		}
+
+	}
+
+	.title,
+	.title_sub{
+		position: static;
+		writing-mode:lr-tb;
+		height: 35px;
+	}
+
+	.title{
+		right: auto;
+		font-size: 18px;
+		line-height: 36px;
+	}
+
+	.title_sub{
+		left: auto;
+		font-size: 12px;
+		line-height: 30px;
+		text-transform:capitalize;
+	}
+
+
+	.item:hover{
+		.icon{
+			border-color: @c_main;
+			color: @c_main;
+		}
+
+		.content{
+			color: @c_main;
+			// 圆点
+			&:before{
+				top: 50%;
+				right: 0;
+				left: auto;
+				background: @c_main;
+			}
+			// 竖条
+			&::after{
+				left:auto;
+				bottom: auto;
+				top: 50%;
+				height: 1px;
+				width: 100%;
+				background: @c_main;
+			}
+		}
+	}
+}
+
+
+/** 关于辛辣
+----------------------------------------------------------------*/
+.about_banner{
+	position: relative;
+	margin: -70/2px 0 0 0;
+	height: 100%;
+	height: 350px;
+	min-height: 0;
+	min-height:auto;
+
+	.content{
+		// margin: 35px 0 0 0;
+		background-size:61.8%;
+	}
+}
+
+.about_banner_txt{
+	margin: 0 30px;
+	padding: 40px 0;
+	font-size: 10px;
+}
+
+
+/** 联系我们
+----------------------------------------------------------------*/
+.contactus_banner{
+	margin: 0;
+}
+
+.contactus{
+	margin: 40px 30px;
+	width: auto;
+	// width:
+	font-size:9px;
+
+	// 简介
+	.brief{
+
+		p{
+			margin: 10px auto;
+		}
+	}
+
+	// 联系方式
+	.address{
+		position: relative;
+		display: inline-block;
+		max-width: 90%;
+		padding-left: 60px;
+		margin: 40px auto 0;
+
+		.l{
+			position: absolute;
+			left: 0;
+			top: 0;
+
+			display: block;
+			width: 50px;
+			height: 50px;
+			background-color: @c_main;
+			color: @c_white;
+			text-align: center;
+
+
+			.title{
+				display: inline-block;
+			}
+			.icon{
+				display: block;
+				padding: 6px 0 0 0;
+				font-size: 1rem;
+				line-height: 1;
+			}
+
+			.title{
+				font-size: 8px;
+				line-height: 1;
+				border-bottom: 1px solid @c_white;
+			}
+
+			.title_sub{
+				font-size: 6px;
+				line-height: 1;
+				text-transform: uppercase;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		.info_wrap{
+
+		}
+
+		.link{
+			display: block;
+			height: 50/2px;
+			line-height: 50/2px;
+
+			color: @c_main;
+			font-size: 9px;
+			text-align: left;
+
+			.icon{
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin: 0 4px 0 0;
+				border-radius: 50%;
+				background: @c_main;
+				color: @c_white;
+				line-height: 23px;
+				font-size: 10px;
+				text-align: center;
+			}
+		}
+
+	}
+
 
 }

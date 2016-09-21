@@ -281,6 +281,117 @@ a:link,a:visited,a:hover,a:active{
 	}
 }
 
+.e_mobile_nav_crumbs{
+
+	.link:last-child{
+		width: 4rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		// overflow: hidden;
+	}
+}
+
+
+
+/* nav main 移动
+ ------------------------------------------------------------- */
+.nav_main_mobile{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: @c_white;
+	.link{
+		display: inline-block;
+		width: 49.2%;
+		height: 60px;
+		line-height: 60px;
+		&::before{
+			// font-size: 2rem;
+
+		}
+
+		&:active,
+		&.active{
+			// color: @c_main;
+			// background: @c_main;
+		}
+	}
+
+	// 三角
+	.triangle{
+		&::before{
+			content: "";
+			display: inline-block;
+			// position: absolute;
+			width: 0;
+			height: 0;
+			border: 14px solid @c_f;
+			vertical-align: middle;
+		}
+	}
+
+	.triangle_l{
+		&::before{
+			border-width: 14px 0 14px 14px;
+			border-color: transparent transparent transparent @c_f;
+		}
+	}
+
+	.triangle_r{
+		&::before{
+			border-width: 14px 14px 14px 0;
+			border-color: transparent @c_f transparent transparent;
+		}
+	}
+
+	.triangle_t{
+		&::before{
+			border-width: 14px 14px 0 14px;
+			border-color: @c_f transparent transparent transparent;
+		}
+	}
+
+	.triangle_b{
+		&::before{
+			border-width: 0 14px 14px 14px;
+			border-color: transparent transparent @c_f transparent;
+		}
+	}
+
+
+	.triangle_l:active,
+	.triangle_l.active{
+		&::before{
+			border-color: transparent transparent transparent @c_main;
+		}
+	}
+
+	.triangle_r:active,
+	.triangle_r.active{
+		&::before{
+			border-color: transparent @c_main transparent transparent;
+		}
+	}
+
+	.triangle_t:active,
+	.triangle_t.active{
+		&::before{
+			border-color: @c_main transparent transparent transparent;
+		}
+	}
+
+	.triangle_b:active,
+	.triangle_b.active{
+		&::before{
+			border-color: transparent transparent @c_main transparent;
+		}
+	}
+
+
+
+}
+
 
 /* list
  ------------------------------------------------------------- */

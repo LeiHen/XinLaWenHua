@@ -254,27 +254,27 @@
   border-width: 20px 20px 20px 0;
   border-color: transparent #b6263e transparent transparent;
 }
-/* line 282, page.less */
+/* line 281, page.less */
 .contactus .e_contact {
   width: 50%;
   min-width: 254px;
 }
-/* line 285, page.less */
+/* line 284, page.less */
 .contactus .e_contact .companyname,
 .contactus .e_contact .companyname_en {
   text-align: center;
 }
-/* line 289, page.less */
+/* line 288, page.less */
 .contactus .e_contact .companyname {
   font-size: 20px;
 }
-/* line 292, page.less */
+/* line 291, page.less */
 .contactus .e_contact .companyname_en {
   margin: 0 0 20px 0;
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 297, page.less */
+/* line 296, page.less */
 .contactus .e_contact .link {
   display: inline-block;
   margin: 10px auto;
@@ -282,7 +282,7 @@
   line-height: 1;
   color: #b6263e;
 }
-/* line 305, page.less */
+/* line 304, page.less */
 .contactus .e_contact .icon {
   display: inline-block;
   width: 30px;
@@ -296,12 +296,12 @@
 }
 /** 动画
 ----------------------------------------------------------------*/
-/* line 327, page.less */
+/* line 326, page.less */
 .mod_header .logo .icon {
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 332, page.less */
+/* line 331, page.less */
 .column_introduce .icon,
 .column_introduce .content::before,
 .column_introduce .content::after,
@@ -312,7 +312,7 @@
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 343, page.less */
+/* line 342, page.less */
 .mod_list .cover .img {
   -webkit-transition: -webkit-transform 0.4s ease-out;
           transition: transform 0.4s ease-out;

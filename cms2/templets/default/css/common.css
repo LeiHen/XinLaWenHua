@@ -77,6 +77,10 @@ a:active {
   height: 100px;
   z-index: 2;
 }
+/* line 64, common.less */
+.mod_header .logo {
+  display: inline-block;
+}
 /* line 66, common.less */
 .mod_header .logo .icon {
   display: block;
@@ -219,25 +223,97 @@ a:active {
 .mod_nav_crumbs .link:hover::before {
   background: #b6263e;
 }
+/* line 286, common.less */
+.e_mobile_nav_crumbs .link:last-child {
+  width: 4rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* nav main 移动
+ ------------------------------------------------------------- */
+/* line 298, common.less */
+.nav_main_mobile {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+}
+/* line 304, common.less */
+.nav_main_mobile .link {
+  display: inline-block;
+  width: 49.2%;
+  height: 60px;
+  line-height: 60px;
+}
+/* line 323, common.less */
+.nav_main_mobile .triangle::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 14px solid #3c3c3c;
+  vertical-align: middle;
+}
+/* line 335, common.less */
+.nav_main_mobile .triangle_l::before {
+  border-width: 14px 0 14px 14px;
+  border-color: transparent transparent transparent #3c3c3c;
+}
+/* line 342, common.less */
+.nav_main_mobile .triangle_r::before {
+  border-width: 14px 14px 14px 0;
+  border-color: transparent #3c3c3c transparent transparent;
+}
+/* line 349, common.less */
+.nav_main_mobile .triangle_t::before {
+  border-width: 14px 14px 0 14px;
+  border-color: #3c3c3c transparent transparent transparent;
+}
+/* line 356, common.less */
+.nav_main_mobile .triangle_b::before {
+  border-width: 0 14px 14px 14px;
+  border-color: transparent transparent #3c3c3c transparent;
+}
+/* line 365, common.less */
+.nav_main_mobile .triangle_l:active::before,
+.nav_main_mobile .triangle_l.active::before {
+  border-color: transparent transparent transparent #b6263e;
+}
+/* line 372, common.less */
+.nav_main_mobile .triangle_r:active::before,
+.nav_main_mobile .triangle_r.active::before {
+  border-color: transparent #b6263e transparent transparent;
+}
+/* line 379, common.less */
+.nav_main_mobile .triangle_t:active::before,
+.nav_main_mobile .triangle_t.active::before {
+  border-color: #b6263e transparent transparent transparent;
+}
+/* line 386, common.less */
+.nav_main_mobile .triangle_b:active::before,
+.nav_main_mobile .triangle_b.active::before {
+  border-color: transparent transparent #b6263e transparent;
+}
 /* list
  ------------------------------------------------------------- */
-/* line 287, common.less */
+/* line 398, common.less */
 .mod_list_wrap {
   margin: 20px auto;
 }
-/* line 291, common.less */
+/* line 402, common.less */
 .mod_list {
   height: 280px;
   margin: 76px auto 88px auto;
   background: #e4e4e4;
 }
-/* line 296, common.less */
+/* line 407, common.less */
 .mod_list .wrap {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
-/* line 302, common.less */
+/* line 413, common.less */
 .mod_list .cover {
   position: absolute;
   display: block;
@@ -250,24 +326,24 @@ a:active {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 313, common.less */
+/* line 424, common.less */
 .mod_list .cover .img {
   max-width: 100%;
   display: block;
 }
-/* line 316, common.less */
+/* line 427, common.less */
 .mod_list .cover .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 322, common.less */
+/* line 433, common.less */
 .mod_list .fr {
   width: 540px;
   height: 280px;
   margin: 0 0 0 400px;
 }
-/* line 328, common.less */
+/* line 439, common.less */
 .mod_list .title {
   margin: 70px 0 20px 0;
   font-size: 20px;
@@ -276,7 +352,7 @@ a:active {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 339, common.less */
+/* line 450, common.less */
 .mod_list .wire {
   position: relative;
   display: block;
@@ -284,7 +360,7 @@ a:active {
   margin: 0 0 20px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 345, common.less */
+/* line 456, common.less */
 .mod_list .wire::before {
   content: "";
   position: absolute;
@@ -296,13 +372,13 @@ a:active {
   border: 4px solid #e4e4e4;
   border-radius: 50%;
 }
-/* line 358, common.less */
+/* line 469, common.less */
 .mod_list .info {
   height: 160px;
   font-size: 14px;
   line-height: 1.6;
 }
-/* line 364, common.less */
+/* line 475, common.less */
 .mod_list .btn_more {
   margin: 0 0 0 auto;
   padding: 8px;
@@ -310,14 +386,14 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 371, common.less */
+/* line 482, common.less */
 .mod_list .btn_more:hover {
   color: #b6263e;
   border-color: #b6263e;
 }
 /* article
  ------------------------------------------------------------- */
-/* line 384, common.less */
+/* line 495, common.less */
 .mod_article .title {
   position: relative;
   padding: 40px 0;
@@ -328,7 +404,7 @@ a:active {
   font-weight: normal;
   border-bottom: 2px solid #3c3c3c;
 }
-/* line 394, common.less */
+/* line 505, common.less */
 .mod_article .title::before {
   content: "";
   position: absolute;
@@ -340,38 +416,38 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 407, common.less */
+/* line 518, common.less */
 .mod_article .cover {
   padding: 0 20px 70px 20px;
   margin: 0 0 100px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 412, common.less */
+/* line 523, common.less */
 .mod_article .cover .img {
   margin: 0 auto 40px auto;
   width: 100%;
   max-width: display: block;
 }
-/* line 420, common.less */
+/* line 531, common.less */
 .mod_article .cover p {
   color: #8c8989;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
 }
-/* line 428, common.less */
+/* line 539, common.less */
 .mod_article .content {
   margin: 0 0 120px 0 ;
   color: #3c3c3c;
   line-height: 1.6em;
 }
-/* line 433, common.less */
+/* line 544, common.less */
 .mod_article .content p {
   margin: 2em 0;
 }
 /* page
   ------------------------------------------------------------- */
-/* line 443, common.less */
+/* line 554, common.less */
 .mod_page {
   margin: 40px auto;
   padding: 40px 20px 0 20px;
@@ -379,11 +455,11 @@ a:active {
   text-align: right;
   overflow: hidden;
 }
-/* line 450, common.less */
+/* line 561, common.less */
 .mod_page > li {
   display: inline-block;
 }
-/* line 454, common.less */
+/* line 565, common.less */
 .mod_page_item {
   display: inline-block;
   padding: 0 4px;
@@ -398,7 +474,7 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 471, common.less */
+/* line 582, common.less */
 .mod_page_item:hover,
 .mod_page_item.active {
   color: #ffffff;
@@ -407,12 +483,12 @@ a:active {
 }
 /* share
  ------------------------------------------------------------- */
-/* line 483, common.less */
+/* line 594, common.less */
 .mod_share {
   margin: 10px auto;
   text-align: right;
 }
-/* line 487, common.less */
+/* line 598, common.less */
 .mod_share .link {
   display: inline-block;
   margin: 0 5px;
@@ -425,27 +501,27 @@ a:active {
   font-size: 30px;
   text-align: center;
 }
-/* line 500, common.less */
+/* line 611, common.less */
 .mod_share .link:hover {
   background: #b6263e;
 }
 /*  list4
  ------------------------------------------------------------- */
-/* line 515, common.less */
+/* line 626, common.less */
 .mod_list4 .item {
   display: inline-block;
   width: 200px;
   margin-left: 114px;
 }
-/* line 520, common.less */
+/* line 631, common.less */
 .mod_list4 .item:first-child {
   margin-left: 0;
 }
-/* line 525, common.less */
+/* line 636, common.less */
 .mod_list4 .item:hover .title {
   color: #b6263e;
 }
-/* line 530, common.less */
+/* line 641, common.less */
 .mod_list4 .img_wrap {
   width: 200px;
   height: 200px;
@@ -454,18 +530,18 @@ a:active {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-/* line 538, common.less */
+/* line 649, common.less */
 .mod_list4 .img {
   display: block;
   max-width: 100%;
 }
-/* line 542, common.less */
+/* line 653, common.less */
 .mod_list4 .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 546, common.less */
+/* line 657, common.less */
 .mod_list4 .title {
   margin: 20px 0;
   text-align: center;
@@ -477,18 +553,18 @@ a:active {
 }
 /* recommend
  ------------------------------------------------------------- */
-/* line 560, common.less */
+/* line 671, common.less */
 .mod_recommend {
   margin: 100px auto;
 }
-/* line 563, common.less */
+/* line 674, common.less */
 .mod_recommend .wire {
   position: relative;
   margin: 30px 0;
   height: 1px;
   background: #3c3c3c;
 }
-/* line 569, common.less */
+/* line 680, common.less */
 .mod_recommend .wire .title {
   position: absolute;
   top: -22px;
@@ -499,7 +575,7 @@ a:active {
   line-height: 1;
   font-weight: normal;
 }
-/* line 580, common.less */
+/* line 691, common.less */
 .mod_recommend .wire::before {
   content: "";
   position: absolute;
@@ -510,7 +586,7 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 592, common.less */
+/* line 703, common.less */
 .mod_recommend .mod_list4 {
   margin: 60px 0;
 }

@@ -1,10 +1,3 @@
-<!--
-@Date:   2016-07-13T17:00:57+08:00
-@Last modified time: 2016-08-05T19:45:08+08:00
--->
-
-
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
@@ -23,10 +16,10 @@
 		<!-- mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- <meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
 		<meta name="format-detection" content="telephone=no" />
-		<meta name="wap-font-scale" content="no"/>
+		<meta name="wap-font-scale" content="no"/> -->
 
 		<link rel="shortcut icon" href="favicon.ico" type="images/x-icon" />
 		<link rel="bookmark" href="favicon.ico" />
@@ -37,27 +30,21 @@
             <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
         <![endif]-->
 
-		<link rel="stylesheet" href="css/base.css">
-		<link rel="stylesheet" href="css/common.css">
-		<link rel="stylesheet" href="css/page.css">
-		<link rel="stylesheet" href="css/font.css">
-		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/page.css">
+		<link rel="stylesheet" href="../css/font.css">
+		<link rel="stylesheet" href="../css/responsive.css">
 	</head>
 	<body class="w_min">
 		<!-- S header -->
-		<header class="mod_header w_min w">
+		<header class="mod_header w_min">
 			<div class="w_max ">
 				<a href="index.html" class="logo" title="返回首页" alt="辛辣文化"><i class="icon icon-xinlawenhua" ></i></a>
 
-				<!-- S nav -->
-				<nav class="mod_nav_main">
-					<a href="index.html" class="link ">首页</a>
-					<a href="traditional_culture.html" class="link">传统文化</a>
-					<a href="original_aesthetic.html" class="link">原创美学</a>
-					<a href="about.html" class="link active">关于辛辣</a>
-					<a href="contact_us.html" class="link">联系我们</a>
-				</nav>
-				<!-- E nav -->
+				<a href="index.html" class="home">
+					<i class="icon icon-home"></i>
+				</a>
 			</div>
 		</header>
 		<!-- E header -->
@@ -71,25 +58,25 @@
 		<!-- E main -->
 
 
-		<!-- S footer -->
-		<footer class="mod_footer w_min">
+		<!-- S main -->
+		<div class="about_banner_txt">
+			日常新媒体代运营、热门事件策划及营销、线上线下活动策划及执行、撰写创 意文案、品牌定位及输出、平台或商城的搭建开发、周边产品的定制及开发、 企业公关的管理及危机公关的应对、社群定制、CEO自明星打造。
+		</div>
+		<!-- E main -->
 
-			<div class="w_max ">
 
-				<div class="relation">
-					<a href="#" class="item" title="weixin"><i class="icon icon-weixin"></i></a>
-					<a href="#" class="item" title="weibo"><i class="icon icon-weibo"></i></a>
-					<a href="mailto:61955365@qq.com" class="item" title="61955365@qq.com"><i class="icon icon-aite"></i></a>
-				</div>
-				<!-- /分享-->
+		<!-- S nav_main_mobile -->
+		<nav class="nav_main_mobile">
+			<a href="#" class="link triangle triangle_r ">
 
-				<p class="txt companyname">北京辛辣文化传播有限公司</p>
-				<p class="txt companyname_en">XENA CULTULE</p>
-			</div>
+			</a>
+			<a href="#" class="link triangle triangle_l">
 
-		</footer>
-		<!-- E footer -->
-
+			</a>
+		</nav>
+		<!-- 占位符 -->
+		<div class="h60"></div>
+		<!-- E nav_main_mobile -->
 
 
         <!--[if !IE | IE 9 ]><!-->
@@ -100,9 +87,9 @@
         <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
         <![endif]-->
 
-        <script src="js/base.js"></script>
-        <script src="js/common.js"></script>
-        <script src="js/page.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/page.js"></script>
 
 
 		<!-- css3兼容低版本 -->
@@ -128,7 +115,8 @@
         <script type="text/javascript">
 			//初始化 统一入口
 			function init(){
-				$(".mod_header").addClass('pa');
+				// alert("微信-->"+isWeiXin());
+				// browserVersions();
 			}
 			init();
 		</script>
