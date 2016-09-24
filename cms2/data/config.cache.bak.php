@@ -1,7 +1,7 @@
 <?php
-$cfg_basehost = 'http://x2.t.com';
+$cfg_basehost = 'http://host3';
 $cfg_cmspath = '';
-$cfg_cookie_encode = 'w0YD5FKkWdwnWA1gdoGD3CEI9wyas3mg';
+$cfg_cookie_encode = 'ykhG22oBMMFWysf6xwnl8o3kd3oxwTqf';
 $cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';

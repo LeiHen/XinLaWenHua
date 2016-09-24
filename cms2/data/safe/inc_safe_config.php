@@ -1,10 +1,3 @@
-<!--
-@Date:   2016-07-29T02:54:19+08:00
-@Last modified time: 2016-07-31T10:45:17+08:00
--->
-
-
-
 <?php
 $safe_gdopen = '1,2,3,4,5,6,7';
 $safe_codetype = '3';

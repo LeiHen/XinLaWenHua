@@ -1,10 +1,3 @@
-<!--
-@Date:   2016-07-29T02:54:21+08:00
-@Last modified time: 2016-07-31T09:09:15+08:00
--->
-
-
-
 <?php
 if(!defined('DEDEINC')) exit("Request Error!");
 /**

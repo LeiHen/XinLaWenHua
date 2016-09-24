@@ -1,10 +1,3 @@
-<!--
-@Date:   2016-07-29T02:54:22+08:00
-@Last modified time: 2016-07-30T08:41:06+08:00
--->
-
-
-
 <?php
 if(!defined('DEDEINC'))
 {
