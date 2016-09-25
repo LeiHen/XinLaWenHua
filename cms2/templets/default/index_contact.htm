@@ -16,52 +16,26 @@
 <!-- {dede:field.content/} -->
 <!-- E banner -->
 
-
 <!-- S main -->
-<div class="main w_max w_min ">
+<div class="main contactus">
 
-    <!-- <img src="{dede:global.cfg_templets_skin/}/images/temp/temp_c.jpg" alt="" class="w"> -->
+	<!-- 简介 -->
+	<div class="brief">
+		{dede:global.cfg_whatxinla/}
+	</div>
 
-	<ul class="contactus">
-		<li class="contactus_itme contactus_special triangle_r">
-			<div class="contactus_content">
-				<i class="icon icon-window"></i>
-				<h1 class="title">什么是辛辣</h1>
-				<h2 class="title_sub">company introduction</h2>
-			</div>
-		</li>
-		<li class="contactus_itme">
-			<div class="contactus_content">
-				{dede:global.cfg_whatxinla/}
-			 <br>
-			</div>
-		</li>
-		<li class="contactus_itme contactus_special triangle_b">
-			<div class="contactus_content">
+
+	<div class="tc">
+
+		<!-- 联系方式 -->
+		<address class="address">
+			<div class="l">
 				<i class="icon icon-user"></i>
 				<h1 class="title">联系我们</h1>
 				<h2 class="title_sub">Contact us</h2>
 			</div>
-		</li>
-	</ul>
 
-	<ul class="contactus">
-		<li class="contactus_itme">
-			<div class="contactus_content">
-				{dede:global.cfg_mainbusiness/}
-			</div>
-		</li>
-		<li class="contactus_itme contactus_special triangle_l">
-			<div class="contactus_content">
-				<i class="icon icon-shopcar"></i>
-				<h1 class="title">主营业务</h1>
-				<h2 class="title_sub">main business</h2>
-			</div>
-		</li>
-		<li class="contactus_itme ">
-			<div class="contactus_content e_contact">
-				<h2 class="companyname">北京辛辣文化传播有限公司</h2>
-				<h3 class="companyname_en">XENA CULTULE</h3>
+			<div class="info_wrap">
 				<a href="mailto:{dede:global.cfg_mail/}" class="link" target="_blank">
 					<i class="icon icon-aite"></i>
 					{dede:global.cfg_mail/}
@@ -71,20 +45,33 @@
 					{dede:global.cfg_weibo/}
 				</a>
 			</div>
-		</li>
-	</ul>
+		</address>
+	</div>
+
+
 
 </div>
 <!-- E main -->
 
-{dede:include filename="footer.htm"/}
+
+<!-- S nav_main_mobile -->
+<nav class="nav_main_mobile">
+	{dede:type typeid='3'}
+		<a href="[field:typelink/]" class="link triangle triangle_r" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+
+	<a href="/" class="link triangle triangle_l"></a>
+</nav>
+<!-- 占位符 -->
+<div class="h60"></div>
+<!-- E nav_main_mobile -->
 
 
 <script type="text/javascript">
 	//初始化 统一入口
 	function init(){
 
-		$(".mod_header").addClass('pa').addClass('mod_header_white');
+
 
 	}
 	init();

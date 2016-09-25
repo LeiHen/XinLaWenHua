@@ -2,16 +2,18 @@
 <div class="banner w_min">
     <!-- Swiper -->
     <div class="swiper-container">
-       <div class="swiper-wrapper">
+
+        <div class="swiper-wrapper">
             {dede:arclist addfields='img_cover' row='5' channelid='19'}
-                <div class="swiper-slide"><img src="[field:img_cover /]" alt="[field:title/]" class="img"></div>
+            <a class="swiper-slide" href="[field:link/]" ><img src="[field:img_cover /]" alt="[field:title/]" class="img"></a>
             {/dede:arclist}
-       </div>
+        </div>
+
        <!-- Add Pagination -->
        <div class="swiper-pagination"></div>
        <!-- Add Navigation -->
-       <div class="swiper-button-prev"></div>
-       <div class="swiper-button-next"></div>
+       <!-- <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div> -->
    </div>
 </div>
 <!-- E banner -->

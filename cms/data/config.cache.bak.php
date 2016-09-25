@@ -1,11 +1,11 @@
 <?php
-$cfg_basehost = 'http://xlwh.t.com';
-$cfg_cmspath = '/cms';
-$cfg_cookie_encode = 'dLOWaeWGXTIt5hFVQU9waDVClBIXDuK';
-$cfg_indexurl = '/cms';
+$cfg_basehost = 'http://x.t.com';
+$cfg_cmspath = '';
+$cfg_cookie_encode = 'Gd3MgoBL7MWG4WG10Li1ndcFpQWWUg7r';
+$cfg_indexurl = '/';
 $cfg_backup_dir = 'backupdata';
 $cfg_indexname = '主页';
-$cfg_webname = '辛辣文化';
+$cfg_webname = '我的网站';
 $cfg_adminemail = 'admin@dedecms.com';
 $cfg_html_editor = 'ckeditor';
 $cfg_arcdir = '/a';

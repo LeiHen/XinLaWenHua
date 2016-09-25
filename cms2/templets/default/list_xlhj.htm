@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="description" content="{dede:global.cfg_description/}" />
+	<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+	{dede:include filename="head.htm"/}
+
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+</head>
+<body class="w_min">
+
+{dede:include filename="header.htm"/}
+
+<!-- S main -->
+<div class="main w_max w_min">
+
+	{dede:include filename="nav_crumbs.htm"/}
+
+
+    <!-- S mod_list_wrap -->
+    <ul class="mod_list_wrap">
+        {dede:list addfields='body,cover' channelid='1'  pagesize='6' orderby='pubdate'}
+        <li class="mod_list">
+            <div class="wrap">
+                <div class="cover">
+                    <img src="[field:cover/]" alt="[field:title/]" class="img">
+                </div>
+                <div class="fr">
+                    <h2 class="title" title="[field:title/]">[field:title/]</h2>
+                    <span class="wire"></span>
+                    <p class="info">[field:description/]</p>
+                    <div class="tr">
+                        <a class="u_btn btn_more" href="[field:arcurl/]" target="_blank">&gt;&gt;&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {/dede:list}
+
+    </ul>
+    <!-- E mod_list_wrap -->
+
+    <!-- S page -->
+    <ul class="mod_page">
+        {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="4"/}
+    </ul>
+    <!-- E page -->
+
+</div>
+<!-- E main -->
+
+
+<!-- S nav_main_mobile -->
+<nav class="nav_main_mobile">
+
+	{dede:type typeid='2'}
+		<a href="[field:typelink/]" class="link triangle triangle_r" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+
+
+	{dede:type typeid='3'}
+		<a href="[field:typelink/]" class="link triangle triangle_l" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+
+</nav>
+<!-- 占位符 -->
+<div class="h60"></div>
+<!-- E nav_main_mobile -->
+
+
+
+<script type="text/javascript">
+	//初始化 统一入口
+	function init(){
+
+
+	}
+	init();
+</script>
+
+</body>
+</html>

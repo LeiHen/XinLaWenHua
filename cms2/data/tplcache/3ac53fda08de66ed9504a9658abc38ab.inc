@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" class="link triangle triangle_l" alt="[field:typename/]" title="[field:typename/]"></a>

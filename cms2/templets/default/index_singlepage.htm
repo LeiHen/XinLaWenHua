@@ -17,13 +17,31 @@
 </div>
 <!-- E main -->
 
-{dede:include filename="footer.htm"/}
+<!-- S main -->
+<div class="about_banner_txt">
+	{dede:field.content/}
+</div>
+<!-- E main -->
+
+<!-- S nav_main_mobile -->
+<nav class="nav_main_mobile">
+	{dede:type typeid='6'}
+		<a href="[field:typelink/]" class="link triangle triangle_r" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+
+	{dede:type typeid='4'}
+		<a href="[field:typelink/]" class="link triangle triangle_l" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+</nav>
+<!-- 占位符 -->
+<div class="h60"></div>
+<!-- E nav_main_mobile -->
 
 
 <script type="text/javascript">
 	//初始化 统一入口
 	function init(){
-		$(".mod_header").addClass('pa');
+
 	}
 	init();
 </script>

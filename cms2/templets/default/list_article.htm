@@ -30,7 +30,7 @@
                     <span class="wire"></span>
                     <p class="info">[field:description/]</p>
                     <div class="tr">
-                        <a class="u_btn btn_more" href="[field:arcurl/]" target="_blank">阅读更多</a>
+                        <a class="u_btn btn_more" href="[field:arcurl/]" target="_blank">&gt;&gt;&gt;</a>
                     </div>
                 </div>
             </div>
@@ -42,26 +42,29 @@
 
     <!-- S page -->
     <ul class="mod_page">
-        <!-- <a href='#' class='mod_page_item'>&lt;&lt;</a>
-        <a href='#' class='mod_page_item' rel='prev'>&lt;</a>
-        <a href='#' class='mod_page_item active'>1</a>
-        <a href='#' class='m
-		od_page_item'>2</a>
-        <a href='#' class='mod_page_item'>3</a>
-        <a href='#' class='mod_page_item'>4</a>
-        <a href='#' class='mod_page_item'>5</a>
-        <a href='#' class='mod_page_item' rel='next'>&gt;</a>
-        <a href='#' class='mod_page_item'>&gt;&gt;</a> -->
-
-        {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
-
+        {dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="4"/}
     </ul>
     <!-- E page -->
 
 </div>
 <!-- E main -->
 
-{dede:include filename="footer.htm"/}
+
+<!-- S nav_main_mobile -->
+<nav class="nav_main_mobile">
+
+	<a href="/" class="link triangle triangle_r" alt="{global:cfg_webname/}" title="{global:cfg_webname/}"></a>
+
+
+	{dede:type typeid='2'}
+		<a href="[field:typelink/]" class="link triangle triangle_l" alt="[field:typename/]" title="[field:typename/]"></a>
+	{/dede:type}
+
+</nav>
+<!-- 占位符 -->
+<div class="h60"></div>
+<!-- E nav_main_mobile -->
+
 
 
 <script type="text/javascript">

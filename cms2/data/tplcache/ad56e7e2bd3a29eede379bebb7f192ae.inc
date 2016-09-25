@@ -1,0 +1,1 @@
+<a class="swiper-slide" href="[field:link/]" target="_blank"><img src="[field:img_cover /]" alt="[field:title/]" class="img"></a>

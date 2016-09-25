@@ -1,10 +1,3 @@
-<!--
-@Date:   2016-07-29T02:54:22+08:00
-@Last modified time: 2016-07-31T10:03:53+08:00
--->
-
-
-
 <?php   if(!defined('DEDEINC')) exit('Request Error!');
 /**
  * 自动关连文档标签
@@ -183,7 +176,7 @@ function lib_likearticle(&$ctag,&$refObj)
                 $row['plusurl'] = $row['phpurl'] = $GLOBALS['cfg_phpurl'];
                 $row['memberurl'] = $GLOBALS['cfg_memberurl'];
                 $row['templeturl'] = $GLOBALS['cfg_templeturl'];
-                
+
                 $addfile = $refObj->ChannelUnit->ChannelInfos["listfields"]; //获取文章模型的自定义字段列表
                 if($addfile){
                   $addfiles = explode(",",$addfile);  //拆分成数组
