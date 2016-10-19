@@ -1,9 +1,5 @@
 @charset "utf-8";
-/**
-* @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-27T07:44:03+08:00
-*/
-/* line 8, lib.less */
+/* line 1, lib.less */
 /* @charset "UTF-8"; */
 /* line 5, responsive.less */
 .visible_phone {
@@ -254,18 +250,22 @@ body {
   margin: 0 0 40px 0 ;
   font-size: 7px;
 }
-/* line 296, responsive.less */
+/* line 295, responsive.less */
+.mod_article .content img {
+  max-width: 100%;
+}
+/* line 298, responsive.less */
 .mod_article .content p {
   margin: 2em 0;
 }
 /* page
  ------------------------------------------------------------- */
-/* line 305, responsive.less */
+/* line 307, responsive.less */
 .mod_page {
   margin: 20px auto;
   padding: 20px 30px;
 }
-/* line 308, responsive.less */
+/* line 310, responsive.less */
 .mod_page_item {
   margin: 0;
   padding: 0 4px;
@@ -273,29 +273,29 @@ body {
 }
 /** banner
 ----------------------------------------------------------------*/
-/* line 319, responsive.less */
+/* line 321, responsive.less */
 .banner {
   min-height: 0;
   height: auto;
 }
-/* line 323, responsive.less */
+/* line 325, responsive.less */
 .banner .img {
   max-width: 100%;
 }
 /** column_introduce
 ----------------------------------------------------------------*/
-/* line 330, responsive.less */
+/* line 332, responsive.less */
 .column_wrap {
   margin: 0 auto;
   border: none;
 }
-/* line 334, responsive.less */
+/* line 336, responsive.less */
 .column_introduce {
   margin: 20px auto;
   padding: 0;
   width: auto;
 }
-/* line 339, responsive.less */
+/* line 341, responsive.less */
 .column_introduce .item {
   position: relative;
   display: block;
@@ -306,7 +306,7 @@ body {
   width: auto;
   text-align: left;
 }
-/* line 350, responsive.less */
+/* line 352, responsive.less */
 .column_introduce .icon {
   position: absolute;
   left: 0;
@@ -319,7 +319,7 @@ body {
   text-align: center;
   color: #b6263e;
 }
-/* line 364, responsive.less */
+/* line 366, responsive.less */
 .column_introduce .content {
   position: relative;
   margin: auto;
@@ -330,7 +330,7 @@ body {
   color: #b6263e;
   line-height: 1.2;
 }
-/* line 377, responsive.less */
+/* line 379, responsive.less */
 .column_introduce .content:before {
   content: "";
   position: absolute;
@@ -347,7 +347,7 @@ body {
           transform: translate(0, -3px);
   z-index: 2;
 }
-/* line 395, responsive.less */
+/* line 397, responsive.less */
 .column_introduce .content::after {
   content: "";
   position: absolute;
@@ -359,43 +359,43 @@ body {
   background: #b6263e;
   z-index: 1;
 }
-/* line 409, responsive.less */
+/* line 411, responsive.less */
 .column_introduce .title,
 .column_introduce .title_sub {
   position: static;
   writing-mode: lr-tb;
   height: 35px;
 }
-/* line 416, responsive.less */
+/* line 418, responsive.less */
 .column_introduce .title {
   right: auto;
   font-size: 18px;
   line-height: 36px;
 }
-/* line 422, responsive.less */
+/* line 424, responsive.less */
 .column_introduce .title_sub {
   left: auto;
   font-size: 12px;
   line-height: 30px;
   text-transform: capitalize;
 }
-/* line 431, responsive.less */
+/* line 433, responsive.less */
 .column_introduce .item:hover .icon {
   border-color: #b6263e;
   color: #b6263e;
 }
-/* line 436, responsive.less */
+/* line 438, responsive.less */
 .column_introduce .item:hover .content {
   color: #b6263e;
 }
-/* line 439, responsive.less */
+/* line 441, responsive.less */
 .column_introduce .item:hover .content:before {
   top: 50%;
   right: 0;
   left: auto;
   background: #b6263e;
 }
-/* line 446, responsive.less */
+/* line 448, responsive.less */
 .column_introduce .item:hover .content::after {
   left: auto;
   bottom: auto;
@@ -406,7 +406,7 @@ body {
 }
 /** 关于辛辣
 ----------------------------------------------------------------*/
-/* line 461, responsive.less */
+/* line 463, responsive.less */
 .about_banner {
   position: relative;
   margin: -35px 0 0 0;
@@ -415,11 +415,11 @@ body {
   min-height: 0;
   min-height: auto;
 }
-/* line 469, responsive.less */
+/* line 471, responsive.less */
 .about_banner .content {
   background-size: 61.8%;
 }
-/* line 475, responsive.less */
+/* line 477, responsive.less */
 .about_banner_txt {
   margin: 0 30px;
   padding: 40px 0;
@@ -427,21 +427,21 @@ body {
 }
 /** 联系我们
 ----------------------------------------------------------------*/
-/* line 484, responsive.less */
+/* line 486, responsive.less */
 .contactus_banner {
   margin: 0;
 }
-/* line 488, responsive.less */
+/* line 490, responsive.less */
 .contactus {
   margin: 40px 30px;
   width: auto;
   font-size: 9px;
 }
-/* line 497, responsive.less */
+/* line 499, responsive.less */
 .contactus .brief p {
   margin: 10px auto;
 }
-/* line 503, responsive.less */
+/* line 505, responsive.less */
 .contactus .address {
   position: relative;
   display: inline-block;
@@ -449,7 +449,7 @@ body {
   padding-left: 60px;
   margin: 40px auto 0;
 }
-/* line 510, responsive.less */
+/* line 512, responsive.less */
 .contactus .address .l {
   position: absolute;
   left: 0;
@@ -461,24 +461,24 @@ body {
   color: #ffffff;
   text-align: center;
 }
-/* line 523, responsive.less */
+/* line 525, responsive.less */
 .contactus .address .l .title {
   display: inline-block;
 }
-/* line 526, responsive.less */
+/* line 528, responsive.less */
 .contactus .address .l .icon {
   display: block;
   padding: 6px 0 0 0;
   font-size: 1rem;
   line-height: 1;
 }
-/* line 533, responsive.less */
+/* line 535, responsive.less */
 .contactus .address .l .title {
   font-size: 8px;
   line-height: 1;
   border-bottom: 1px solid #ffffff;
 }
-/* line 539, responsive.less */
+/* line 541, responsive.less */
 .contactus .address .l .title_sub {
   font-size: 6px;
   line-height: 1;
@@ -486,7 +486,7 @@ body {
   padding: 0;
   margin: 0;
 }
-/* line 552, responsive.less */
+/* line 554, responsive.less */
 .contactus .address .link {
   display: block;
   height: 25px;
@@ -495,7 +495,7 @@ body {
   font-size: 9px;
   text-align: left;
 }
-/* line 561, responsive.less */
+/* line 563, responsive.less */
 .contactus .address .link .icon {
   display: inline-block;
   width: 20px;

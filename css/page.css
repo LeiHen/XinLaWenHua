@@ -1,48 +1,40 @@
-/**
-* @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-08-05T20:06:58+08:00
-*/
 @charset "UTF-8";
-/**
-* @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-27T07:44:03+08:00
-*/
-/* line 8, lib.less */
+/* line 1, lib.less */
 /* @charset "UTF-8"; */
 /** banner
 ----------------------------------------------------------------*/
-/* line 14, page.less */
+/* line 7, page.less */
 .banner {
   position: relative;
   height: 100%;
   min-height: 600px;
 }
-/* line 21, page.less */
+/* line 14, page.less */
 .banner .img {
   max-width: 100%;
 }
 /** column_introduce
 ----------------------------------------------------------------*/
-/* line 30, page.less */
+/* line 23, page.less */
 .column_wrap {
   margin: 90px auto 120px auto;
   border: 1px solid #3c3c3c;
   border-left: none;
   border-right: none;
 }
-/* line 37, page.less */
+/* line 30, page.less */
 .column_introduce {
   margin: 0 auto;
   padding: 100px 0;
   width: 1200px;
   text-align: center;
 }
-/* line 43, page.less */
+/* line 36, page.less */
 .column_introduce .item {
   display: inline-block;
   width: 24%;
 }
-/* line 48, page.less */
+/* line 41, page.less */
 .column_introduce .icon {
   display: block;
   margin: 0 auto;
@@ -54,7 +46,7 @@
   line-height: 200px;
   font-size: 150px;
 }
-/* line 61, page.less */
+/* line 54, page.less */
 .column_introduce .content {
   position: relative;
   margin: 50px auto 0 auto;
@@ -64,7 +56,7 @@
   color: #3c3c3c;
   line-height: 1.2;
 }
-/* line 71, page.less */
+/* line 64, page.less */
 .column_introduce .content:before {
   content: "";
   position: absolute;
@@ -77,7 +69,7 @@
   border-radius: 50%;
   z-index: 2;
 }
-/* line 87, page.less */
+/* line 80, page.less */
 .column_introduce .content::after {
   content: "";
   position: absolute;
@@ -88,37 +80,37 @@
   background: #b6263e;
   z-index: 1;
 }
-/* line 101, page.less */
+/* line 94, page.less */
 .column_introduce .title,
 .column_introduce .title_sub {
   position: absolute;
   writing-mode: tb-rl;
 }
-/* line 107, page.less */
+/* line 100, page.less */
 .column_introduce .title {
   right: 14px;
   font-size: 36px;
 }
-/* line 112, page.less */
+/* line 105, page.less */
 .column_introduce .title_sub {
   left: 14px;
   font-size: 18px;
 }
-/* line 119, page.less */
+/* line 112, page.less */
 .column_introduce .item:hover .icon {
   border-color: #b6263e;
   color: #b6263e;
 }
-/* line 124, page.less */
+/* line 117, page.less */
 .column_introduce .item:hover .content {
   color: #b6263e;
 }
-/* line 127, page.less */
+/* line 120, page.less */
 .column_introduce .item:hover .content:before {
   top: -2px;
   background: #b6263e;
 }
-/* line 133, page.less */
+/* line 126, page.less */
 .column_introduce .item:hover .content::after {
   height: 100%;
   width: 1px;
@@ -126,7 +118,7 @@
 }
 /** 关于辛辣
 ----------------------------------------------------------------*/
-/* line 145, page.less */
+/* line 138, page.less */
 .about_banner {
   position: relative;
   height: 100%;
@@ -135,7 +127,7 @@
   background-size: cover;
   z-index: -1;
 }
-/* line 155, page.less */
+/* line 148, page.less */
 .about_banner .content {
   position: absolute;
   top: 50%;
@@ -150,7 +142,7 @@
 }
 /** 联系我们
 ----------------------------------------------------------------*/
-/* line 170, page.less */
+/* line 163, page.less */
 .contactus_banner {
   max-width: 100%;
   width: 100%;
@@ -158,12 +150,12 @@
   margin: -100px 0 0 0;
   z-index: -1;
 }
-/* line 178, page.less */
+/* line 171, page.less */
 .contactus {
   width: 100%;
   display: table;
 }
-/* line 182, page.less */
+/* line 175, page.less */
 .contactus_itme {
   position: relative;
   display: table-cell;
@@ -172,13 +164,13 @@
   width: 33.33%;
   background: #e4e4e4;
 }
-/* line 189, page.less */
+/* line 182, page.less */
 .contactus_itme::before {
   content: "";
   display: block;
   padding-bottom: 100%;
 }
-/* line 196, page.less */
+/* line 189, page.less */
 .contactus_content {
   position: absolute;
   top: 50%;
@@ -191,15 +183,15 @@
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 205, page.less */
+/* line 198, page.less */
 .contactus_content p {
   margin: 10px auto;
 }
-/* line 208, page.less */
+/* line 201, page.less */
 .contactus_content .icon {
   font-size: 120px;
 }
-/* line 222, page.less */
+/* line 215, page.less */
 .contactus .contactus_special {
   position: relative;
   background: #b6263e;
@@ -207,22 +199,22 @@
   z-index: 1;
   text-align: center;
 }
-/* line 229, page.less */
+/* line 222, page.less */
 .contactus .contactus_special .contactus_content {
   text-align: center;
   color: #ffffff;
 }
-/* line 234, page.less */
+/* line 227, page.less */
 .contactus .contactus_special .icon,
 .contactus .contactus_special .title,
 .contactus .contactus_special .title_sub {
   color: #ffffff;
 }
-/* line 237, page.less */
+/* line 230, page.less */
 .contactus .contactus_special .icon {
   font-size: 120px;
 }
-/* line 247, page.less */
+/* line 240, page.less */
 .contactus .contactus_special::after {
   content: "";
   width: 0;
@@ -230,7 +222,7 @@
   position: absolute;
   border-style: solid;
 }
-/* line 255, page.less */
+/* line 248, page.less */
 .contactus .contactus_special.triangle_r::after {
   left: 100%;
   top: 50%;
@@ -238,7 +230,7 @@
   border-width: 20px 0 20px 20px;
   border-color: transparent transparent transparent #b6263e;
 }
-/* line 263, page.less */
+/* line 256, page.less */
 .contactus .contactus_special.triangle_b::after {
   left: 50%;
   top: 100%;
@@ -246,7 +238,7 @@
   border-width: 20px 20px 0 20px;
   border-color: #b6263e transparent transparent transparent;
 }
-/* line 271, page.less */
+/* line 264, page.less */
 .contactus .contactus_special.triangle_l::after {
   right: 100%;
   top: 50%;
@@ -254,27 +246,27 @@
   border-width: 20px 20px 20px 0;
   border-color: transparent #b6263e transparent transparent;
 }
-/* line 281, page.less */
+/* line 274, page.less */
 .contactus .e_contact {
   width: 50%;
   min-width: 254px;
 }
-/* line 284, page.less */
+/* line 277, page.less */
 .contactus .e_contact .companyname,
 .contactus .e_contact .companyname_en {
   text-align: center;
 }
-/* line 288, page.less */
+/* line 281, page.less */
 .contactus .e_contact .companyname {
   font-size: 20px;
 }
-/* line 291, page.less */
+/* line 284, page.less */
 .contactus .e_contact .companyname_en {
   margin: 0 0 20px 0;
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 296, page.less */
+/* line 289, page.less */
 .contactus .e_contact .link {
   display: inline-block;
   margin: 10px auto;
@@ -282,7 +274,7 @@
   line-height: 1;
   color: #b6263e;
 }
-/* line 304, page.less */
+/* line 297, page.less */
 .contactus .e_contact .icon {
   display: inline-block;
   width: 30px;
@@ -296,12 +288,12 @@
 }
 /** 动画
 ----------------------------------------------------------------*/
-/* line 326, page.less */
+/* line 319, page.less */
 .mod_header .logo .icon {
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 331, page.less */
+/* line 324, page.less */
 .column_introduce .icon,
 .column_introduce .content::before,
 .column_introduce .content::after,
@@ -312,7 +304,7 @@
   -webkit-transition: all 0.4s ease-out;
           transition: all 0.4s ease-out;
 }
-/* line 342, page.less */
+/* line 335, page.less */
 .mod_list .cover .img {
   -webkit-transition: -webkit-transform 0.4s ease-out;
           transition: transform 0.4s ease-out;

@@ -1,87 +1,79 @@
-/**
-* @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-08-05T20:28:48+08:00
-*/
 @charset "UTF-8";
-/**
-* @Date:   2016-07-13T17:00:57+08:00
-* @Last modified time: 2016-07-27T07:44:03+08:00
-*/
-/* line 8, lib.less */
+/* line 1, lib.less */
 /* @charset "UTF-8"; */
 /*全局*/
-/* line 12, common.less */
+/* line 5, common.less */
 body {
   background-color: #f5f5f5
   /*overflow: hidden;*/
 }
-/* line 21, common.less */
+/* line 14, common.less */
 a:link,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
 }
-/* line 25, common.less */
+/* line 18, common.less */
 .w_per100 {
   width: 100%;
 }
-/* line 26, common.less */
+/* line 19, common.less */
 .w_per90 {
   width: 90%;
 }
-/* line 27, common.less */
+/* line 20, common.less */
 .w_per618 {
   width: 61.8%;
 }
-/* line 28, common.less */
+/* line 21, common.less */
 .w_per382 {
   width: 38.2%;
 }
-/* line 30, common.less */
+/* line 23, common.less */
 .w_per25 {
   width: 25%;
 }
-/* line 31, common.less */
+/* line 24, common.less */
 .w_per40 {
   width: 40%;
 }
-/* line 32, common.less */
+/* line 25, common.less */
 .w_per60 {
   width: 60%;
 }
-/* line 33, common.less */
+/* line 26, common.less */
 .w_per75 {
   width: 75%;
 }
-/* line 35, common.less */
+/* line 28, common.less */
 .w_max {
   max-width: 1520px;
   margin: 0 auto;
 }
-/* line 41, common.less */
+/* line 34, common.less */
 .w_min {
   min-width: 1200px;
 }
-/* line 45, common.less */
+/* line 38, common.less */
 .w_1200 {
   max-width: 1200px;
   margin: 0 auto;
 }
 /* mod_header
  ------------------------------------------------------------- */
-/* line 55, common.less */
+/* line 48, common.less */
 .mod_header {
   overflow: hidden;
   width: 100%;
   height: 100px;
   z-index: 2;
 }
-/* line 64, common.less */
+/* line 57, common.less */
 .mod_header .logo {
   display: inline-block;
 }
-/* line 66, common.less */
+/* line 59, common.less */
 .mod_header .logo .icon {
   display: block;
   float: left;
@@ -90,59 +82,59 @@ a:active {
   line-height: 0.5;
   color: #b6263e;
 }
-/* line 79, common.less */
+/* line 72, common.less */
 .mod_header .logo:hover .icon {
   -webkit-transform: scale(0.98);
       -ms-transform: scale(0.98);
           transform: scale(0.98);
 }
-/* line 90, common.less */
+/* line 83, common.less */
 .mod_header_white .logo .icon {
   color: #ffffff;
 }
-/* line 95, common.less */
+/* line 88, common.less */
 .mod_header_white .mod_nav_main .link {
   color: #ffffff;
 }
-/* line 97, common.less */
+/* line 90, common.less */
 .mod_header_white .mod_nav_main .link::before {
   background: #ffffff;
 }
 /* mod_footer
  ------------------------------------------------------------- */
-/* line 113, common.less */
+/* line 106, common.less */
 .mod_footer {
   height: 300px;
   background: #b6263e;
   box-shadow: inset 0px 10px 40px -10px #000000;
 }
-/* line 120, common.less */
+/* line 113, common.less */
 .mod_footer .relation {
   padding: 110px 0 30px 0;
   text-align: center;
 }
-/* line 123, common.less */
+/* line 116, common.less */
 .mod_footer .relation .item {
   padding: 0 20px;
   width: 50px;
   height: 50px;
   color: #ffffff;
 }
-/* line 133, common.less */
+/* line 126, common.less */
 .mod_footer .relation .icon {
   font-size: 40px;
   line-height: 1;
 }
-/* line 142, common.less */
+/* line 135, common.less */
 .mod_footer .txt {
   color: #ffffff;
   text-align: center;
 }
-/* line 146, common.less */
+/* line 139, common.less */
 .mod_footer .companyname {
   font-size: 30px;
 }
-/* line 150, common.less */
+/* line 143, common.less */
 .mod_footer .companyname_en {
   margin: 10px 0 0 0;
   font-size: 14px;
@@ -150,12 +142,12 @@ a:active {
 }
 /* mod_nav_main
  ------------------------------------------------------------- */
-/* line 201, common.less */
+/* line 194, common.less */
 .mod_nav_main {
   height: 100px;
   text-align: right;
 }
-/* line 205, common.less */
+/* line 198, common.less */
 .mod_nav_main .link {
   position: relative;
   margin: 0 30px;
@@ -163,7 +155,7 @@ a:active {
   line-height: 100px;
   font-size: 16px;
 }
-/* line 215, common.less */
+/* line 208, common.less */
 .mod_nav_main .link::before {
   content: "";
   position: absolute;
@@ -176,24 +168,24 @@ a:active {
   background: #b6263e;
   border-radius: 50%;
 }
-/* line 230, common.less */
+/* line 223, common.less */
 .mod_nav_main .link:first-child::before {
   display: none;
 }
-/* line 235, common.less */
+/* line 228, common.less */
 .mod_nav_main .link.active,
 .mod_nav_main .link:hover {
   text-decoration: underline;
 }
 /* nav_crumbs
  ------------------------------------------------------------- */
-/* line 245, common.less */
+/* line 238, common.less */
 .mod_nav_crumbs {
   display: block;
   margin: 40px 0 40px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 252, common.less */
+/* line 245, common.less */
 .mod_nav_crumbs .link {
   position: relative;
   display: inline-block;
@@ -202,7 +194,7 @@ a:active {
   font-style: 16px;
   line-height: 1em;
 }
-/* line 262, common.less */
+/* line 255, common.less */
 .mod_nav_crumbs .link::before {
   content: "";
   position: absolute;
@@ -213,17 +205,17 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 273, common.less */
+/* line 266, common.less */
 .mod_nav_crumbs .link.active,
 .mod_nav_crumbs .link:hover {
   color: #b6263e;
 }
-/* line 277, common.less */
+/* line 270, common.less */
 .mod_nav_crumbs .link.active::before,
 .mod_nav_crumbs .link:hover::before {
   background: #b6263e;
 }
-/* line 286, common.less */
+/* line 279, common.less */
 .e_mobile_nav_crumbs .link:last-child {
   width: 4rem;
   text-overflow: ellipsis;
@@ -231,7 +223,7 @@ a:active {
 }
 /* nav main 移动
  ------------------------------------------------------------- */
-/* line 298, common.less */
+/* line 291, common.less */
 .nav_main_mobile {
   text-align: center;
   position: fixed;
@@ -239,14 +231,14 @@ a:active {
   width: 100%;
   background: #ffffff;
 }
-/* line 304, common.less */
+/* line 297, common.less */
 .nav_main_mobile .link {
   display: inline-block;
   width: 49.2%;
   height: 60px;
   line-height: 60px;
 }
-/* line 323, common.less */
+/* line 316, common.less */
 .nav_main_mobile .triangle::before {
   content: "";
   display: inline-block;
@@ -255,65 +247,65 @@ a:active {
   border: 14px solid #3c3c3c;
   vertical-align: middle;
 }
-/* line 335, common.less */
+/* line 328, common.less */
 .nav_main_mobile .triangle_l::before {
   border-width: 14px 0 14px 14px;
   border-color: transparent transparent transparent #3c3c3c;
 }
-/* line 342, common.less */
+/* line 335, common.less */
 .nav_main_mobile .triangle_r::before {
   border-width: 14px 14px 14px 0;
   border-color: transparent #3c3c3c transparent transparent;
 }
-/* line 349, common.less */
+/* line 342, common.less */
 .nav_main_mobile .triangle_t::before {
   border-width: 14px 14px 0 14px;
   border-color: #3c3c3c transparent transparent transparent;
 }
-/* line 356, common.less */
+/* line 349, common.less */
 .nav_main_mobile .triangle_b::before {
   border-width: 0 14px 14px 14px;
   border-color: transparent transparent #3c3c3c transparent;
 }
-/* line 365, common.less */
+/* line 358, common.less */
 .nav_main_mobile .triangle_l:active::before,
 .nav_main_mobile .triangle_l.active::before {
   border-color: transparent transparent transparent #b6263e;
 }
-/* line 372, common.less */
+/* line 365, common.less */
 .nav_main_mobile .triangle_r:active::before,
 .nav_main_mobile .triangle_r.active::before {
   border-color: transparent #b6263e transparent transparent;
 }
-/* line 379, common.less */
+/* line 372, common.less */
 .nav_main_mobile .triangle_t:active::before,
 .nav_main_mobile .triangle_t.active::before {
   border-color: #b6263e transparent transparent transparent;
 }
-/* line 386, common.less */
+/* line 379, common.less */
 .nav_main_mobile .triangle_b:active::before,
 .nav_main_mobile .triangle_b.active::before {
   border-color: transparent transparent #b6263e transparent;
 }
 /* list
  ------------------------------------------------------------- */
-/* line 398, common.less */
+/* line 391, common.less */
 .mod_list_wrap {
   margin: 20px auto;
 }
-/* line 402, common.less */
+/* line 395, common.less */
 .mod_list {
   height: 280px;
   margin: 76px auto 88px auto;
   background: #e4e4e4;
 }
-/* line 407, common.less */
+/* line 400, common.less */
 .mod_list .wrap {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
-/* line 413, common.less */
+/* line 406, common.less */
 .mod_list .cover {
   position: absolute;
   display: block;
@@ -326,24 +318,24 @@ a:active {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 424, common.less */
+/* line 417, common.less */
 .mod_list .cover .img {
   max-width: 100%;
   display: block;
 }
-/* line 427, common.less */
+/* line 420, common.less */
 .mod_list .cover .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 433, common.less */
+/* line 426, common.less */
 .mod_list .fr {
   width: 540px;
   height: 280px;
   margin: 0 0 0 400px;
 }
-/* line 439, common.less */
+/* line 432, common.less */
 .mod_list .title {
   margin: 70px 0 20px 0;
   font-size: 20px;
@@ -352,7 +344,7 @@ a:active {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 450, common.less */
+/* line 443, common.less */
 .mod_list .wire {
   position: relative;
   display: block;
@@ -360,7 +352,7 @@ a:active {
   margin: 0 0 20px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 456, common.less */
+/* line 449, common.less */
 .mod_list .wire::before {
   content: "";
   position: absolute;
@@ -372,13 +364,13 @@ a:active {
   border: 4px solid #e4e4e4;
   border-radius: 50%;
 }
-/* line 469, common.less */
+/* line 462, common.less */
 .mod_list .info {
   height: 160px;
   font-size: 14px;
   line-height: 1.6;
 }
-/* line 475, common.less */
+/* line 468, common.less */
 .mod_list .btn_more {
   margin: 0 0 0 auto;
   padding: 8px;
@@ -386,14 +378,14 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 482, common.less */
+/* line 475, common.less */
 .mod_list .btn_more:hover {
   color: #b6263e;
   border-color: #b6263e;
 }
 /* article
  ------------------------------------------------------------- */
-/* line 495, common.less */
+/* line 488, common.less */
 .mod_article .title {
   position: relative;
   padding: 40px 0;
@@ -404,7 +396,7 @@ a:active {
   font-weight: normal;
   border-bottom: 2px solid #3c3c3c;
 }
-/* line 505, common.less */
+/* line 498, common.less */
 .mod_article .title::before {
   content: "";
   position: absolute;
@@ -416,38 +408,38 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 518, common.less */
+/* line 511, common.less */
 .mod_article .cover {
   padding: 0 20px 70px 20px;
   margin: 0 0 100px 0;
   border-bottom: 1px dashed #3c3c3c;
 }
-/* line 523, common.less */
+/* line 516, common.less */
 .mod_article .cover .img {
   margin: 0 auto 40px auto;
   width: 100%;
   max-width: display: block;
 }
-/* line 531, common.less */
+/* line 524, common.less */
 .mod_article .cover p {
   color: #8c8989;
   line-height: 1.6;
   font-size: 18px;
   text-align: center;
 }
-/* line 539, common.less */
+/* line 532, common.less */
 .mod_article .content {
   margin: 0 0 120px 0 ;
   color: #3c3c3c;
   line-height: 1.6em;
 }
-/* line 544, common.less */
+/* line 537, common.less */
 .mod_article .content p {
   margin: 2em 0;
 }
 /* page
   ------------------------------------------------------------- */
-/* line 554, common.less */
+/* line 547, common.less */
 .mod_page {
   margin: 40px auto;
   padding: 40px 20px 0 20px;
@@ -455,11 +447,11 @@ a:active {
   text-align: right;
   overflow: hidden;
 }
-/* line 561, common.less */
+/* line 554, common.less */
 .mod_page > li {
   display: inline-block;
 }
-/* line 565, common.less */
+/* line 558, common.less */
 .mod_page_item {
   display: inline-block;
   padding: 0 4px;
@@ -474,7 +466,7 @@ a:active {
   font-size: 14px;
   color: #3c3c3c;
 }
-/* line 582, common.less */
+/* line 575, common.less */
 .mod_page_item:hover,
 .mod_page_item.active {
   color: #ffffff;
@@ -483,12 +475,12 @@ a:active {
 }
 /* share
  ------------------------------------------------------------- */
-/* line 594, common.less */
+/* line 587, common.less */
 .mod_share {
   margin: 10px auto;
   text-align: right;
 }
-/* line 598, common.less */
+/* line 591, common.less */
 .mod_share .link {
   display: inline-block;
   margin: 0 5px;
@@ -501,27 +493,27 @@ a:active {
   font-size: 30px;
   text-align: center;
 }
-/* line 611, common.less */
+/* line 604, common.less */
 .mod_share .link:hover {
   background: #b6263e;
 }
 /*  list4
  ------------------------------------------------------------- */
-/* line 626, common.less */
+/* line 619, common.less */
 .mod_list4 .item {
   display: inline-block;
   width: 200px;
   margin-left: 114px;
 }
-/* line 631, common.less */
+/* line 624, common.less */
 .mod_list4 .item:first-child {
   margin-left: 0;
 }
-/* line 636, common.less */
+/* line 629, common.less */
 .mod_list4 .item:hover .title {
   color: #b6263e;
 }
-/* line 641, common.less */
+/* line 634, common.less */
 .mod_list4 .img_wrap {
   width: 200px;
   height: 200px;
@@ -530,18 +522,18 @@ a:active {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
-/* line 649, common.less */
+/* line 642, common.less */
 .mod_list4 .img {
   display: block;
   max-width: 100%;
 }
-/* line 653, common.less */
+/* line 646, common.less */
 .mod_list4 .img:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-/* line 657, common.less */
+/* line 650, common.less */
 .mod_list4 .title {
   margin: 20px 0;
   text-align: center;
@@ -553,18 +545,18 @@ a:active {
 }
 /* recommend
  ------------------------------------------------------------- */
-/* line 671, common.less */
+/* line 664, common.less */
 .mod_recommend {
   margin: 100px auto;
 }
-/* line 674, common.less */
+/* line 667, common.less */
 .mod_recommend .wire {
   position: relative;
   margin: 30px 0;
   height: 1px;
   background: #3c3c3c;
 }
-/* line 680, common.less */
+/* line 673, common.less */
 .mod_recommend .wire .title {
   position: absolute;
   top: -22px;
@@ -575,7 +567,7 @@ a:active {
   line-height: 1;
   font-weight: normal;
 }
-/* line 691, common.less */
+/* line 684, common.less */
 .mod_recommend .wire::before {
   content: "";
   position: absolute;
@@ -586,7 +578,7 @@ a:active {
   border-radius: 50%;
   background: #3c3c3c;
 }
-/* line 703, common.less */
+/* line 696, common.less */
 .mod_recommend .mod_list4 {
   margin: 60px 0;
 }
